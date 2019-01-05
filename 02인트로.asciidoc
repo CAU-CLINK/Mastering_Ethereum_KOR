@@ -1,0 +1,21 @@
+[[intro_chapter]]
+== 이더리움 베이직
+
+((("Ethereum (generally)","basics", id="ix_02intro-asciidoc0", range="startofrange")) 이번 챕터에서는 이더리움에 대해서 본격적으로 알아볼 것이고, 지갑을 어떻게 사용하는지, 거래(트랜잭션)는 어떻게 발생시키는지 그리고 기본적인 스마트 컨트랙트를 어떻게 작동시키는지에 대해서 배울 것이다.
+
+[[ether_units]]
+=== 이더리움 화폐 단위
+
+((("currency units")))((("Ethereum (generally)","currency units")))이더리움의 화폐 단위는 _이더(ether)_  라고 불리운다. 또한 "ETH"라고 혹은 &#926 모양으로 표기 되기도 한다. (알파벳 대문자 E 처럼 보이는 그리스 문자 "Xi" 에서 따왔다) 또, 아주 가끔(?) &#9830; 의 모양으로도 표기된다. 예를 들면, 1 ether , 1 ETH , &#926;1, 또는 &#9830;1 이렇게 표시된다. 
+
+[TIP]
+====
+Use Unicode character +U+039E+ for &#926; and +U+2666+ for &#9830;.
+====
+
+이더(Ether)는 더 작은 단위로 세분화 될 수 있다. 그리고 그 단위 중 가장 작은 것은 _wei_ 이다. 1 이더는 백경 (1,000,000,000,000,000,000 | 10^18) _wei_ 이다. 사람들이 종종 화폐 이름으로 "이더리움" 말하는 것을 들어 본 적이 있을 것이다. 하지만, 엄연히 얘기하면 그것은 옳은 표현법이 아니다. 이더리움 시스템 그 자체이고, 이더(_ether_) 가 화폐이다.
+
+The value of ether is always represented internally in Ethereum as an unsigned integer value denominated in wei. When you transact 1 ether, the transaction encodes 1000000000000000000 wei as the value.
+
+Ether’s various denominations have both a scientific name using the International System of Units (SI) and a colloquial name that pays homage to many of the great minds of computing and cryptography.
+
