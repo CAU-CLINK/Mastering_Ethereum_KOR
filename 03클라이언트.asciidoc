@@ -1,0 +1,32 @@
+[[ethereum_clients_chapter]]
+== 이더리움 클라이언트
+
+((("clients, Ethereum", id="ix_03clients-asciidoc0", range="startofrange")))이더리움 클라이언트는 Ethereum specification 과 다른 이더리움 클라이언트들과 p2p 네트워크를 통해 통신할 수 있는 기능을 implement 한 소프트웨어 어플리케이션이다. 다른 이더리움 클라이언트들이 참조 사양과 표준화된 통신 프로토콜을 준수하면 _상호 운용_될 수 있다. While these different clients are implemented by different teams and in different programming languages, they all "speak" the same protocol and follow the same rules. As such, they can all be used to operate and interact with the same Ethereum network.
+
+이더리움은 오픈소스 프로젝트이고, 모든 major client들에게 소스 코드는 오픈소스 라이센스가 허용하는한(?) (e.g., LGPL v3.0) 다운로드 받을 수 있고 어떠한 목적으로도 사용될 수 있다. 
+
+((("Yellow Paper specification")))이더리움은 "황서"라는 공식 사양에 의해 정의된다. (see <<references>>).
+
+((("Bitcoin","Ethereum definition compared to"))) 이는 공식적으로 정해진 사양이 없는 타 프로젝트들과 다르다. (예를 들면, 비트코인) Where Bitcoin's "specification" is the reference implementation Bitcoin Core, Ethereum's specification is documented in a paper that combines an English and a mathematical (formal) specification. This formal specification, in addition to various Ethereum Improvement Proposals, defines the standard behavior of an Ethereum pass:[<span class="keep-together">client</span>]. The Yellow Paper is periodically updated as major changes are made to pass:[<span class="keep-together">Ethereum</span>].
+
+깔끔하게 정리된 이더리움의 공식 사양을 공개함으로써, 이더리움 클라이언트를 소프트웨어에 도입한 수많은 독립적으로 개발되는 프로젝트(아직 상호운용되는)들이 있다. (와 이게 무슨 x같은 해석이지?) 이더리움을 기반으로 해서 네트워크에서 돌아가는 프로젝트의 숫자는 여타 다른 블록체인보다 훨씬 많다. 그리고 이것은 당연히 좋은 신호이다. Indeed, it has, for example, proven itself to be an excellent way of defending against attacks on the network, because exploitation of a particular client's implementation strategy simply hassles the developers while they patch the exploit, while other clients keep the network running almost unaffected.
+
+=== 이더리움 네트워크
+
+((("clients, Ethereum","Ethereum-based networks and", id="ix_03clients-asciidoc1", range="startofrange")))((("networks (Ethereum)","clients and", id="ix_03clients-asciidoc2", range="startofrange"))) Ethereum Yellow Paper 에 정의되어 있는 공식적인 사양을 준수하는 이더리움 기반의 네트워크들은 상당히 많다. 하지만, 이 모든 것들이 상호운용되는 것은 아니다 되는 것도 있고, 그렇지 않은 것들도 있다. 
+
+Among these Ethereum-based networks are Ethereum, Ethereum Classic, Ella, Expanse, Ubiq, Musicoin, and many others. While mostly compatible at the protocol level, these networks often have features or attributes that require maintainers of Ethereum client software to make small changes in order to support each network. Because of this, not every version of Ethereum client software runs every Ethereum-based blockchain.
+
+이더리움 프로토콜을 도입한 주요 사례는 현재로서는 6개가 있다. , 6개의 서로 다르게 쓰여진 언어들 : 
+
+* Parity, written in Rust (Rust로 작성된 Parity)
+* Geth, written in Go     (Go 로 작성된 Geth)
+* +cpp-ethereum+, written in Cpass:[++] (Cpass:[++]로 작성된 cpp-etherum)
+* +pyethereum+, written in Python (Python 으로 작성된 pyethereum)
+* Mantis, written in Scala (Scala 로 작성된 Mantis)
+* Harmony, written in Java (Java 로 작성된 Harmony)
+
+이번 섹션에서는, 가장 흔하고 많이 쓰이는 2가지 클라이언트 , Parity 와 Geth 에 대해서 다뤄보려고 한다. 각각의 클라이언트를 이용해서 노드를 어떻게 셋팅하는지 보여줄 것이고 몇개의 command-line options 를 살펴보고 interfaces를 programming 할 수 있는 어플리케이션 몇 개를 살펴볼 에정이다(APIs).
+
+[[full_node_importance]]
+==== 꼭 풀 노드를 돌려야 하나요?
