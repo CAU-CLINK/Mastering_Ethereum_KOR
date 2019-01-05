@@ -1,7 +1,7 @@
 [[intro_chapter]]
 == 이더리움 베이직
 
-((("Ethereum (generally)","basics", id="ix_02intro-asciidoc0", range="startofrange")) 이번 챕터에서는 이더리움에 대해서 본격적으로 알아볼 것이고, 지갑을 어떻게 사용하는지, 거래(트랜잭션)는 어떻게 발생시키는지 그리고 기본적인 스마트 컨트랙트를 어떻게 작동시키는지에 대해서 배울 것이다.
+((("Ethereum (generally)","basics", id="ix_02intro-asciidoc0", range="startofrange"))) 이번 챕터에서는 이더리움에 대해서 본격적으로 알아볼 것이고, 지갑을 어떻게 사용하는지, 거래(트랜잭션)는 어떻게 발생시키는지 그리고 기본적인 스마트 컨트랙트를 어떻게 작동시키는지에 대해서 배울 것이다.
 
 [[ether_units]]
 === 이더리움 화폐 단위
