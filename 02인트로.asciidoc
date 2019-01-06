@@ -59,3 +59,8 @@ MyEtherWallet (MEW):: ((("Ethereum Classic (ETC)","Emerald Wallet and")))((("MyE
 Emerald Wallet:: ((("Emerald Wallet")))Emerald Wallet is designed to work with the Ethereum Classic blockchain, but is compatible with other Ethereum-based blockchains. It's an open source desktop application and works under Windows, macOS, and Linux. Emerald Wallet can run a full node or connect to a public remote node, working in a "light" mode. It also has a companion tool to do all operations from the command line.
 
 We'll start by installing MetaMask on a desktop&#x2014;but first, we'll briefly discuss controlling and managing keys.
+
+[[control_responsibility]]
+=== Control and Responsibility
+
+((("Ethereum (generally)","control and responsibility", id="ix_02intro-asciidoc1", range="startofrange"))) 이더리움과 같은 오픈 블록체인은 탈 중앙화된 시스템으로서 작동하기에 매우 중요하다. That means lots of things, but one crucial aspect is that each user of Ethereum can&#x2014;and should&#x2014;control their own private keys, which are the things that control access to funds and smart contracts. We sometimes call the combination of access to funds and smart contracts an "account" or "wallet." These terms can get quite complex in their functionality, so we will go into this in more detail later. As a fundamental principle, however, it is as easy as one private key equals one "account." Some users choose to give up control over their private keys by using a third-party custodian, such as an online exchange. In this book, we will teach you how to take control and manage your own private keys.
