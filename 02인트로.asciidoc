@@ -36,3 +36,26 @@ Ether denominations and unit names shows the various units, their colloquial (co
 | 1,000,000,000,000,000,000,000 | 10^21^ | Grand | Kiloether
 | 1,000,000,000,000,000,000,000,000 | 10^24^ | | Megaether
 |===
+
+[[choosing_eth_wallet]]
+=== 이더리움 지갑 고르기
+
+((("Ethereum (generally)","wallet choices")))((("wallets","choosing")))((("wallets","defined"))) 용어 "지갑"은 많은 의미를 가지고 있다. although they are all related and on a day-to-day basis boil down pto pretty much the same thing. 우리는 당신의 이더리움 계정을 관리하는 것을 보조하는 소프트웨어 어플리케이션의 의미로 "지갑"이라는 용어를 사용하려고 한다. 즉, 이더리움 지갑은 이더리움 시스템으로의 gateway 이다. 나의 키를 보유하고 있고 나의 의지에 따라 거래를 생성하고 broadcast 시킨다. 이더리움 지갑의 종류가 많고 각각 다른 특징과 디자인을 가지고 있기 때문에, 선택하는 것이 쉽지는 않다. 몇 개는 입문자에게 알맞고 몇 개는 전문가에게 알맞는다. 이더리움 플랫폼은 그 스스로 여전히 개선되고 있기에 최고의 지갑은 플랫폼 업그레이드에 따라서 같이 변화를 적용시키는 것이라고 할 수 있다. (are often the ones that adapt to the changes)
+
+당신이 특정 지갑을 골랐는데 그 지갑이 작동하는 방식이 마음에 들지 않는다면 &#x2014; 혹은 괜찮았지만 또 다른 것들을 경험해보고 싶었다면 &#x2014 상당히 쉽게 바꿀 수 있기 때문에 그 점에 대해서는 걱정할 필요가 없다.&#x2014 지갑 바꿀때 해야할 것은 2가지이다. 내 돈(fund)을 새 지갑으로 옮기고 private eys를 export 해서 새 지갑에 import 하면 된다. 
+
+이 책에서 우리는 3가지 다른 지갑을 사용해 볼 것이다. 모바일 지갑, 데스크탑 지갑 그리고 웹 기반의 지갑. 이 3가지 지갑은 수많은 다양성(complexity) 와 특징을 대변하기에 이렇게 선택하였다. 그러나, 이것이 지갑의 품질과 보안을 보증하는 것은 아니다. 단지 구현과 테스팅을 하는데 있어서 좋은 시작인 것이다. 
+
+((("private keys","wallets and"))) 지갑 어플리케이션이 작동하기 위해서 기억해야할 것이 있다. 지갑 어플리케이션은 private keys 에 접근할 수 있는 권한이 있기 때문에, wallet application 을 믿을 수 있는 곳에서 다운로드 받고 사용해야한다는 점이다. 다행히도, 보통, 유명한 지갑 어플리케이션일수록 믿을만한 곳이다. Nevertheless, it is good practice to avoid "putting all your eggs in one basket" and have your Ethereum accounts spread across a couple of wallets.
+
+다음 목록은 입문자에게 적절한 지갑들이다 : 
+
+MetaMask:: ((("MetaMask")))MetaMask is a browser extension wallet that runs in your browser (Chrome, Firefox, Opera, or Brave Browser). It is easy to use and convenient for testing, as it is able to connect to a variety of Ethereum nodes and test blockchains. MetaMask is a web-based wallet.
+
+Jaxx:: ((("Jaxx")))((("wallets","Jaxx")))Jaxx is a multiplatform and multicurrency wallet that runs on a variety of operating systems, including Android, iOS, Windows, macOS, and Linux. It is often a good choice for new users as it is designed for simplicity and ease of use. Jaxx is either a mobile or a desktop wallet, depending on where you install it.
+
+MyEtherWallet (MEW):: ((("Ethereum Classic (ETC)","Emerald Wallet and")))((("MyEtherWallet (MEW)")))((("wallets","Emerald Wallet")))((("wallets","MyEtherWallet")))MyEtherWallet is a web-based wallet that runs in any browser. It has multiple sophisticated features we will explore in many of our examples. MyEtherWallet is a web-based wallet.
+
+Emerald Wallet:: ((("Emerald Wallet")))Emerald Wallet is designed to work with the Ethereum Classic blockchain, but is compatible with other Ethereum-based blockchains. It's an open source desktop application and works under Windows, macOS, and Linux. Emerald Wallet can run a full node or connect to a public remote node, working in a "light" mode. It also has a companion tool to do all operations from the command line.
+
+We'll start by installing MetaMask on a desktop&#x2014;but first, we'll briefly discuss controlling and managing keys.
