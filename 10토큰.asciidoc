@@ -2,30 +2,30 @@
 == Tokens
 
 
-((("tokens", id="ix_10tokens-asciidoc0", range="startofrange")))The word "token" derives from the Old English "tācen," meaning a sign or symbol. It is commonly used to refer to privately issued special-purpose coin-like items of insignificant intrinsic value, such as transportation tokens, laundry tokens, and arcade game tokens.
+((("tokens", id="ix_10tokens-asciidoc0", range="startofrange")))"토큰"이라는 단어는 sign 또는 symbol을 의미하는 고_영어 "tācen," 으로부터 유래되었다. transportation, 세탁 그리고 아케이드 게임 토큰 같은 사적으로 발행됐고 특별한 목표를 가진 coin-like 한 아이템의 insignificant intrinsic 한 value를 칭하는데 주로 사용된다.
 
-Nowadays, "tokens" administered on blockchains are redefining the word to mean blockchain-based abstractions that can be owned and that represent assets, currency, or access rights.
+요즘, 블록체인에서 관리되는 "토큰들"은 자산, 통화 그리고 액세스 권한같은 소유될 수 있는 블록체인 기반이라는 단어의 모호함을 재정의한다.(?)
 
-The association between the word "token" and insignificant value has a lot to do with the limited use of the physical versions of tokens. Often restricted to specific businesses, organizations, or locations, physical tokens are not easily exchangeable and typically have only one function. With blockchain tokens, these restrictions are lifted&#x2014;or, more accurately, completely redefinable. Many blockchain tokens serve multiple purposes globally and can be traded for each other or for other currencies on global liquid markets. With the restrictions on use and ownership gone, the "insignificant value" expectation is also a thing of the past.
+"토큰"이라는 단어와 insignificant value 의 관계는 토큰의 물리적 버전의 한계적인 사용과 많은 관련이 있다.(?)가끔 특정 분야의 사업, 조직 혹은 위치에 제한된 physical token 들은 교환되기 쉽지 않고, 전형적으로 1개의 기능만을 가지고 있다. 블록체인 토큰은 이러한 제한들을 lift 할 수 있거나 더 정확히는 완벽하게 재정의 할 수 있다. 많은 블록체인 토큰들은 많은 목적들을 globally 하게 제공할 수 있고 서로서로 다른 화폐로 global liquid market 에서 교환될 수 있다. 사용에 있어서 제한이 없어지고 소유권이 없어지면서, "insignificant value" 에 대한 기대 역시 옛 것이 되었다.(?)
 
-In this chapter, we look at various uses for tokens and how they are created. We also discuss attributes of tokens such as fungibility and intrinsicality. Finally, we examine the standards and technologies that they are based on, and experiment by building our own tokens.
+이번 챕터에서는, 토큰의 다양한 사용법과 그들이 어떻게 생성되는지에 대해서 알아보려고 한다. fungibility 나 intrinsicality 와 같은 토큰의 특징들에 대해서도 알아보려고 한다. 그리고 우리는 그들이 기반으로 하는 표준과 기술을 시험하고 우리만의 토큰을 만들어보려고 한다.(??)
 
 [[tokens_use]]
 === How Tokens Are Used
 
-((("tokens","uses of", id="ix_10tokens-asciidoc1", range="startofrange")))The most obvious use of tokens is as digital private currencies. However, this is only one possible use. Tokens can be programmed to serve many different functions, often overlapping. For example, a token can simultaneously convey a voting right, an access right, and ownership of a resource. As the following list shows, currency is just the first "app":
+((("tokens","uses of", id="ix_10tokens-asciidoc1", range="startofrange")))토큰의 가장 obvious한 사용처는 디지털 private 통화이다. 그러나, 이거는 오직 한가지 가능한 방법이다. 토큰들은 서로 다른 많은 함수들을 기능을 제공할 수 있게 프로그래밍 될 수 있다, 때로는 겹치게도 할 수 있다. 예를 들어, 토큰은 투표권, 접근 권한 그리고 리소스에 대한 ownership 을 동시에 convey 할 수 있다. 다음 목차에서 보이듯이, 통화는 가장 첫 "app"일 뿐이다 : 
 
-Currency:: A token can serve as a form of currency, with a value determined through private trade.
+통화 (Currency) :: 토큰은 통화의 형태로 제공될 수 있다, private trade를 통해서 가치가 결정된다. 
 
-Resource:: A token can represent a resource earned or produced in a sharing economy or resource-sharing environment; for example, a storage or CPU token representing resources that can be shared over a network.
+리소스 (Resource) ::  토큰은 공유 경제 또는 resource-sharing 환경에서 생산되거나 취득될 수 있는 resource 를 대표할 수 있다 ; 예를 들면, storage 또는 CPU 토큰은 네트워크를 통해서 공유될 수 있는 resources 를 대표한다. 
 
-Asset:: A token can represent ownership of an intrinsic or extrinsic, tangible or intangible asset; for example, gold, real estate, a car, oil, energy, MMOG items, etc.
+자산 (Asset):: 토큰은 본질적이고 외인적인 소유권, 구체적이거나 추상적인 자산의 소유권을 대표할 수 있다 : 예를 들면, 금, 부동산, 차, 기름, 에너지, MMOG 아이템 기타등등
 
-Access:: A token can represent access rights and grant access to a digital or physical property, such as a discussion forum, an exclusive website, a hotel room, or a rental car.
+접근 (Access):: A token can represent access rights and grant access to a digital or physical property, such as a discussion forum, an exclusive website, a hotel room, or a rental car.
 
-Equity:: A token can represent shareholder equity in a digital organization (e.g., a DAO) or legal entity (e.g., a corporation).
+공평 (Equity):: 토큰은 디지털 조직(e.g, DAO) 또는 법적인 entity(e.g, corporation) 에서 주주 공평성을 나타낼 수 있다. 
 
-Voting:: A token can represent voting rights in a digital or legal system.
+투표권 (Voting):: 토큰은 디지털이나 법적 시스템에서 투표권으로써 사용될 수 있다.
 
 Collectible:: A token can represent a digital collectible (e.g., CryptoPunks) or physical collectible (e.g., a painting).
 
@@ -35,30 +35,30 @@ Attestation:: A token can represent a certification or attestation of fact by so
 
 Utility:: A token can be used to access or pay for a service.
 
-Often, a single token encompasses several of these functions. Sometimes it is hard to discern between them, as the physical equivalents have always been inextricably linked. For example, in the physical world, a driver's license (attestation) is also an identity document (identity) and the two cannot be separated. In the digital realm, previously commingled functions can be separated and developed independently (e.g., an anonymous attestation).(((range="endofrange", startref="ix_10tokens-asciidoc1")))
+가끔, 하나의 토큰이 다양한 이 기능들을 관철할 수 있다. 가끔 그것들을 구분하기 힘들다, 물리적 등가성이 항상 불가분하게 연결되어 있기 때문이다. 예를 들면, 물리적 세계에서는, 운전 면허증(attestation)은 신분증(identity)이고 이 둘은 분리될 수 없다. 디지털 환경에서는, 이전에는 혼합되어 있던 이 기능들이 분리되고 독자적으로 발전할 수 있다.(e.g., anonymous attestation)(((range="endofrange", startref="ix_10tokens-asciidoc1")))
 
 [[tokens_fungibility]]
-=== Tokens and Fungibility
+=== 토큰과 분할 가능(Fungibility)
 
-((("fungible tokens", seealso="ERC20 token standard")))((("tokens","fungibility")))https://en.wikipedia.org/wiki/Fungibility[Wikipedia] says: "In economics, fungibility is the property of a good or a commodity whose individual units are essentially interchangeable."
+((("fungible tokens", seealso="ERC20 token standard")))((("tokens","fungibility")))https://en.wikipedia.org/wiki/Fungibility[Wikipedia] says: "경제학에서는, 분할 가능성은 개별적인 unit들이 본질적으로 교환가능한 물품이나 재화의 특징이다."(?) 
 
-Tokens are fungible when we can substitute any single unit of the token for another without any difference in its value or function.
+토큰은 그것의 가치 또는 기능의 차이없이 한 가지에서 다른 것으로 바꿀 수 있을 때 fungible 하다. 
 
-Strictly speaking, if a token's historical provenance can be tracked, then it is not entirely fungible. The ability to track provenance can lead to blacklisting and whitelisting, reducing or eliminating fungibility.
+엄격하게 하면, 만약 토큰의 historical provenance가 추적가능하면, 그 토큰은 완벽하게 fungible 한 것은 아니다. provenance를 추적할 수 있는 능력은 blacklisting 그리고 whitelisting 으로 이어질 수도 있고 이는 fungibility 를 줄이거나 없앨 수 있다.(?) 
 
-((("non-fungible tokens (NFTs)")))Non-fungible tokens are tokens that each represent a unique tangible or intangible item and therefore are not interchangeable. For example, a token that represents ownership of a _specific_ Van Gogh painting is not equivalent to another token that represents a Picasso, even though they might be part of the same "art ownership token" system. Similarly, a token representing a _specific_ digital collectible such as a specific CryptoKitty is not interchangeable with any other CryptoKitty. Each non-fungible token is associated with a unique identifier, such as a serial number.
+((("non-fungible tokens (NFTs)"))) Non-fungible 한 토큰들은 각각이 고유한 맹백한 또는 추상적인(?) item을 대표하고 그러므로 상호 교환이 불가능하다. 예를 들어, _특정한_ 반고흐 그림의 소유권을 나타내는 토큰과 피카소 그림의 소유권을 나타내는 토큰은 같을 수 없다. 설사 그 둘이 모두 "예술 작품의 소유권 토큰"을 나타내는 것이라고 할지언정. 비슷하게, 특정 Cryptokitty 같이 _특정한_ 디지털 소장품을 나타내는 토큰은 다른 크립토키티와 교환할 수 없다.(?) 각각의 non-fungible한 토큰은 특정 identifier 와 연관이 있다, serial number 같은 것이다.
 
-We will see examples of both fungible and non-fungible tokens later in this chapter.
+fungible 한 것과 non-fungible 한 토큰의 예시를 이 단원 끝에서 볼 것이다. 
 
 [NOTE]
 ====
-Note that "fungible" is often used to mean "directly exchangeable for money" (for example, a casino token can be "cashed in," while laundry tokens typically cannot). This is _not_ the sense in which we use the word here.
+"fungible" 이라는 말은 때론 "돈과 직접적으로 교환 가능함" 이라는 의미로 쓰이기도 한다.(예를 들면, 카지노 토큰은 "cashed in" 될 수 있다, laundry token 전형적으로 안되는 것이다). This is _not_ the sense in which we use the word here.
 ====
 
 [[counterparty_risk]]
 === Counterparty Risk
 
-((("counterparty risk")))((("tokens","counterparty risk")))Counterparty risk is the risk that the _other_ party in a transaction will fail to meet their obligations. Some types of transactions suffer additional counterparty risk because there are more than two parties involved. For example, if you hold a certificate of deposit for a precious metal and you sell that to someone, there are at least three parties in that transaction: the seller, the buyer, and the custodian of the precious metal. Someone holds the physical asset; by necessity they become party to the fulfillment of the transaction and add counterparty risk to any transaction involving that asset. In general, when an asset is traded indirectly through the exchange of a token of ownership, there is additional counterparty risk from the custodian of the asset. Do they have the asset? Will they recognize (or allow) the transfer of ownership based on the transfer of a token (such as a certificate, deed, title, or digital token)? In the world of digital tokens representing assets, as in the nondigital world, it is important to understand who holds the asset that is represented by the token and what rules apply to that underlying asset.
+((("counterparty risk")))((("tokens","counterparty risk")))Counterparty risk 는 거래의 상대방이 그 의무를 만족하지 못할 때 나타나는 위험이다. 둘 이상의 주체가 포함된 특정 타입의 거래들은  추가적인 counterparty risk 를 야기한다. 예를 들어, 귀금속에 대한 보증금의 certificate을 너가 보유하고 있고, 너가 그거를 다른 사람에게 판다고 한다면, 최소한 그 거래에는 3개의 당사자가 생긴다 : 판매자, 구매자, 그리고 그 귀금속의 custodian 이다. 물리적 자산을 보유한 누군가가 있다 ; necessity 에 따라 그들은 거래의 fullfillment 가 되고 그 자산이 포함된 그 어느 거래에서도 counterparty risk 가 더해진다. 주로, 토큰의 소유권의 교환에 따라 자산이 비간접적으로 거래가 되면 자산의 custodian 으로 부터 추가적인 counterparty risk 가 생기게 된다. 그들이 자산을 가지고 있는가? 그들이 토큰의 이동을 기반으로 한 소유권의 거래를 인식하는가?(증명서, deed, title 또는 디지털 토큰) 디지털 토큰이 자산을 대표하는 세계에서는 ,as in the nondigital world, 토큰이 나타내는 자산을 누가 소유하는가 그리고 그 자산에 적용되는 규칙을 이해하는 것이 중요하다.(????) 
 
 [[tokens_intrinsicality]]
 === Tokens and Intrinsicality
@@ -1020,6 +1020,6 @@ Nevertheless, the importance and future impact of these standards should not be 
 
 The trick is to separate the long-term vision and impact of this technology, which is likely to be huge, from the short-term bubble of token ICOs, which are rife with fraud. Token standards and the platform will survive the current token mania, and then they will likely change the world.
 
-=== Conclusions
+=== 결론 
 
-Tokens are a very powerful concept in Ethereum and can form the basis of many important decentralized applications. In this chapter we looked at the different types of tokens and token standards, and you built your first token and related application. We will revisit tokens again in <<decentralized_applications_chap>>, where you will use a non-fungible token as the basis for an auction DApp.(((range="endofrange", startref="ix_10tokens-asciidoc0")))
+토큰은 이더리움에서 매우 powerful 한 개념이고 많은 중요한 Dapp의 기반들을 형성할 수 있게 한다. 이번 단원에서는 다양한 종류들의 토큰들과 트콘 기준들을 살펴보았다, 그리고 당신의 첫 토큰과 그에 관련된 어플리케이션을 만들었다. 토큰들에 대해서는 옥션 DApp에 non-fungible 한 토큰을 활용할 <<decentralized_applications_chap>>에서 다시 살펴볼 것이다.(((range="endofrange", startref="ix_10tokens-asciidoc0")))
