@@ -1,58 +1,57 @@
 [[tx_chapter]]
 == Transactions
 
-((("transactions", id="ix_06transactions-asciidoc0", range="startofrange")))Transactions are signed messages originated by an externally owned account, transmitted by the Ethereum network, and recorded on the Ethereum blockchain. This basic definition conceals a lot of surprising and fascinating details. Another way to look at transactions is that they are the only things that can trigger a change of state, or cause a contract to execute in the EVM. Ethereum is a global singleton state machine, and transactions are what make that state machine "tick," changing its state. Contracts don't run on their own. Ethereum doesn't run  autonomously. Everything starts with a transaction.
+((("transactions", id="ix_06transactions-asciidoc0", range="startofrange"))) 거래는 EOA 로 부터 야기된 서명된 메시지(message)이다. 이더리움 네트워크에 의해 전파되고 이더리움 블록체인에 기록된다. 이 기본적인 정의는 수 많은 놀라운 그리고 매력적인 디테일들을 포함한다. 거래를 바라보는 또 다른 시각으로는 state 의 변화를 가지고 올 수 있는 유일한 것이고 EVM 에서 컨트랙트를 실행할 수 있게 한다. 이더리움은 global singleton state machine이고, 거래는 그 state machine 이 상태 변화인 "tick" 하도록 만드는 것이다. 컨트랙트는 그 스스로 작동하지 않는다. 이더리움은 자동적으로 실행되지 않는다. 모든 것은 거래와 함께 시작된다.  
 
-In this chapter, we will dissect transactions, show how they work, and examine the details. Note that much of this chapter is addressed to those who are interested in managing their own transactions at a low level, perhaps because they are writing a wallet app; you don't have to worry about this if you are happy using existing wallet applications, although you may find the details interesting!
+이번 단원에서는, 거래에 대해서 면밀히 살펴보고, 그들이 어떻게 작동하는지에 대해서 자세히 알아볼 것이다. 이 단원의 대부분은 그들 스스로의 거래를 Low level 에서 관리하고 싶어하는 사람들에게 초점이 맞춰져 있다는 것을 명심하고, 그것은 아마도 그들이 대부분 지갑 앱을 쓰고 있기 때문이다 ; 만약 너가 시중에 있는 지갑 application을 사용하는데 만족한다면 그걸로 충분하다, 그럼에도 불구하고 자세히 알아보면 흥미로운 점들은 많을 것이다.
 
 [[tx_struct]]
-=== The Structure of a Transaction
+=== 거래의 구조 
 
-((("transactions","basic structure")))First let's take a look at the basic structure of a transaction, as it is serialized and transmitted on the Ethereum network. Each client and application that receives a serialized transaction will store it in-memory using its own internal data structure, perhaps embellished with metadata that doesn't exist in the network serialized transaction itself. The network-serialization is the only standard form of a transaction.
+((("transactions","basic structure"))) 일단 거래의 기본 구조를 살펴보자, as it is serialized and transmitted on the Ethereum network.   정렬화된 거래를 받는 각 클라이언트와 어플리케이션은 그것을 그 고유의 내부 자료구조를 사용함으로써 in-memory 에 저장할 것이다.(?) 직렬화된 거래 자체에는 존재하지 않는 메타데이터와 함께 아마도 embellished 될 것이다. 네트워크 직렬화는 거래의 유일한 표준 형태이다.
 
-A transaction is a serialized binary message that contains the following data:
+거래는 다음의 데이터들을 가지고 있는 직렬화된 이진 메세지 이다.
 
-Nonce:: A sequence number, issued by the originating EOA, used to prevent message replay
+논스 (Nonce):: 메세지 replay 를 방지하기 위해, EOA 에 의해서 발행된, 사용된 일련 번호
 
-Gas price:: The price of gas (in wei) the originator is willing to pay
+가스 값 (Gas price):: 생성자가 지불해야할 가스 값 (wei 로)
 
-Gas limit:: The maximum amount of gas the originator is willing to buy for this transaction
+가스 리밋 (Gas limit):: 생성자가 특정 거래에 대해서 지불할 용의가 있는 최대 가스 값
 
-Recipient:: The destination Ethereum address
+수신자 (Recipient):: 도착 이더리움 주소지 
 
-Value:: The amount of ether to send to the destination
+값 (Value):: 도착지로 보내는 이더의 양 
 
-Data:: The variable-length binary data payload
+데이터 (Data):: 가변-길이 이진 데이터 페이로드 
 
-v,r,s:: The three components of an ECDSA digital signature of the originating EOA
+v,r,s:: 생성(originating) EOA 의 디지털 서명의 3가지 요소
 
-((("Recursive Length Prefix (RLP)")))((("RLP (Recursive Length Prefix)")))The transaction message's structure is serialized using the Recursive Length Prefix (RLP) encoding scheme, which was created specifically for simple, byte-perfect data serialization in Ethereum. All numbers in Ethereum are encoded as big-endian integers, of lengths that are multiples of 8 bits.
+((("Recursive Length Prefix (RLP)")))((("RLP (Recursive Length Prefix)")))거래 메시지의 구조는 이더리움에서 간단하고 완벽한 바이트 직렬화를 위해 생성된 RLP 인코딩 방식에 따라 직렬화 된 것이다. 이더리움에 있는 모든 숫자들은 endian integer로 인코딩되고, 그 길이는 8bit의 배수이다.
 
-Note that the field labels (+to+, +gas limit+, etc.) are shown here for clarity, but are not part of the transaction serialized data, which contains the field values RLP-encoded. In general, RLP does not contain any field delimiters or labels. RLP's length prefix is used to identify the length of each field. Anything beyond the defined length belongs to the next field in the structure.
+필드 라벨 (+to+, +gas limit+, etc.)은 확실하게 하기 위해서 여기서 언급한 것이지만, RLP 인코딩된 필드 값들을 가지고 있는 거래 직렬화된 데이터의 일부는 아니다. 보통, RLP 는 필드 delimiter 들과 라벨들 값 그 어느 것도 포함하고 있지 않다. RLP의 길이 Prefix 는 각 필드의 길이를 확인하는데 사용된다. 정의된 길이 뒤에 있는 모든 것들은 구조의 다음 field 에 따라 바뀐다.
 
-While this is the actual transaction structure transmitted, most internal representations and user interface visualizations embellish this with additional information, derived from the transaction or from the blockchain.
+이게 실제 전송된 거래 구조이기에, 대부분의 내부 representation들과 UI 화면은 여기에 거래나 블록체인에서 온 추가적인 정보들을 함께 내보낸다.
 
-For example, you may notice there is no &#x201c;from&#x201d; data in the address identifying the originator EOA. That is because the EOA's public key can be derived from the +v,r,s+ components of the ECDSA signature. The address can, in turn, be derived from the public key. When you see a transaction showing a "from" field, that was added by the software used to visualize the transaction. Other metadata frequently added to the transaction by client software includes the block number (once it is mined and included in the blockchain) and a transaction ID (calculated hash). Again, this data is derived from the transaction, and does not form part of the transaction message itself.
+예를 들어, "from" 이라는 데이터는 생성자 EOA 를 인식하는데 있어서 없다. 왜냐하면, EOA 의 공개키는 ECDSA 서명의 요인 v,r,s 로부터 생성되기 때문이다. 이 주소는 ,in turn, 공개키로부터 생성되기 때문이다. "from" 필드를 보여주는 거래가 있는 것은 거래를 시각화 하기 위해서 소프트웨어에 의해 더해진 것임을 알 수 있다. 다른 메타 데이터들도 블록 넘버 그리고 거래 ID 를 포함해서 클라이언트 소프트웨어에 의해 자주 거래에 더해진다. 다시, 이 데이터는 거래에 의해 생성되지 거래 메세지 그 스스로의 부분으로 형성되지 않는다.
 
 [[tx_nonce]]
-=== The Transaction Nonce
+=== 거래 논스 
 
-((("nonces", id="ix_06transactions-asciidoc1", range="startofrange")))((("transactions","nonces", id="ix_06transactions-asciidoc2", range="startofrange")))The nonce is one of the most important and least understood components of a transaction. The definition in the Yellow Paper (see <<references>>) reads:
+((("nonces", id="ix_06transactions-asciidoc1", range="startofrange")))((("transactions","nonces", id="ix_06transactions-asciidoc2", range="startofrange")))논스는 거래에서 가장 중요하고 이해하기 어려운 값이다. 황서에서의 그 정의는 다음과 같다: (see <<references>>) 
 
 ____
-+nonce+: A scalar value equal to the number of transactions sent from this address or, in the case of accounts with associated code, the number of contract-creations made by this account.
-____
++논스+: 이 계정로부터 생성된 거래의 숫자 혹은 코드와 관련된 계정이라면(CA) 이 계정에서 생성된 계약-생성 숫자를 나타내는 스칼라 값 
 
-Strictly speaking, the nonce is an attribute of the originating address; that is, it only has meaning in the context of the sending address. However, the nonce is not stored explicitly as part of an account's state on the blockchain. Instead, it is calculated dynamically, by counting the number of confirmed transactions that have originated from an address.
+더 자세하게 말하면, 논스는 발신 주소의 속성이다 : 즉, 이것은 오직 보내는 주소의 맥락에서만 의미가 있다. 그러나, 논스는 블록체인 상 한 계정의 state 의 일부이기에 외부적으로 저장되지는 않는다. 대신에, 한 주소로부터 야기된 확인된 거래의 숫자를 셈으로써 역동적으로 계산된다.
 
-There are two scenarios where the existence of a transaction-counting nonce is important: the usability feature of transactions being included in the order of creation, and the vital feature of transaction duplication protection. Let's look at an example scenario for each of these:
+거래 - 카운팅 논스의 존재가 중요해지는 2가지 시나리오가 있다 : 거래의 usability 특징이 생성의 관점에서 포함될 때, 그리고 거래의 복사 방지의 중요한 특징.(?) 이들 각각의 예시 시나리오를 보자 : 
 
 1. Imagine you wish to make two transactions. You have an important payment to make of 6 ether, and also another payment of 8 ether. You sign and broadcast the 6-ether transaction first, because it is the more important one, and then you sign and broadcast the second, 8-ether transaction. Sadly, you have overlooked the fact that your account contains only 10 ether, so the network can't accept both transactions: one of them will fail. Because you sent the more important 6-ether one first, you understandably expect that one to go through and the 8-ether one to be rejected. However, in a decentralized system like Ethereum, nodes may receive the transactions in either order; there is no guarantee that a particular node will have one transaction propagated to it before the other. As such, it will almost certainly be the case that some nodes receive the 6-ether transaction first and others receive the 8-ether transaction first. Without the nonce, it would be random as to which one gets accepted and which rejected. However, with the nonce included, the first transaction you sent will have a nonce of, let's say, 3, while the 8-ether transaction has the next nonce value (i.e., 4). So, that transaction will be ignored until the transactions with nonces from 0 to 3 have been processed, even if it is received first. Phew!
 
 
 2. Now imagine you have an account with 100 ether. Fantastic! You find someone online who will accept payment in ether for a mcguffin-widget that you really want to buy. You send them 2 ether and they send you the mcguffin-widget. Lovely. To make that 2-ether payment, you signed a transaction sending 2 ether from your account to their account, and then broadcast it to the Ethereum network to be verified and included on the blockchain. Now, without a nonce value in the transaction, a second transaction sending 2 ether to the same address a second time will look exactly the same as the first transaction. This means that anyone who sees your transaction on the Ethereum network (which means everyone, including the recipient or your enemies) can "replay" the transaction again and again and again until all your ether is gone simply by copying and pasting your original transaction and resending it to the network. However, with the nonce value included in the transaction data, _every single transaction is unique_, even when sending the same amount of ether to the same recipient address multiple times. Thus, by having the incrementing nonce as part of the transaction, it is simply not possible for anyone to "duplicate" a payment you have made.
 
-In summary, it is important to note that the use of the nonce is actually vital for an _account-based_ protocol, in contrast to the &#x201c;Unspent Transaction Output&#x201d; (UTXO) mechanism of the Bitcoin protocol.
+요약하면, 논스 값 사용은 비트코인의 UTXO 매커니즘과는 다르게 _account-based_ 프로토콜에서 필수적이라는 것을 명심해라.&#x201c;
 
 [[tracking_nonce]]
 ==== Keeping Track of Nonces
@@ -81,7 +80,7 @@ When you create a new transaction, you assign the next nonce in the sequence. Bu
 Be careful when using the +getTransactionCount+ function for counting pending transactions, because you might run into some problems if you send a few transactions in a row.
 ====
 
-Let's look at an example:
+예시를 봅시다 :
 
 ++++
 <pre data-type="programlisting">
@@ -106,11 +105,10 @@ Let's look at an example:
 </pre>
 ++++
 
-As you can see, the first transaction we sent increased the transaction count to 41, showing the pending transaction. But when we sent three more transactions in quick succession, the +getTransactionCount+ call didn't count them. It only counted one, even though you might expect there to be three pending in the mempool. If we wait a few seconds to allow for network communications to settle down, the +getTransactionCount+ call will return the expected number. But in the interim, while there is more than one transaction pending, it might not help us.
+보이는 것 처럼, 우리가 보낸 첫 거래는 거래 카운트를 41까지 올렸다 ,showing the pending transaction. 그러나 연속적으로 3번의 거래를 더 보냈을 때, +getTransactionCount+는 그들을 세지 않는다. 오직 1개만 센다, 설사 당신이 3개가 mempool에서 pending 된다고 생각할지언정. 네트워크 통신이 어느정도 진정될 때까지, 몇 초 더 기다린다면, +getTransactionCount+ 는 우리가 예상한 숫자를 return 할 것이다. 그러나 Interim 에서는, 1개 이상의 거래 pending 이 있기 때문에, 도움이 되지 않을 것이다.
 
-When you build an application that constructs transactions, it cannot rely on pass:[<span class="keep-together"><code>getTransactionCount</code></span>] for pending transactions. Only when the pending and confirmed counts are equal (all outstanding transactions are confirmed) can you trust the output of +getTransactionCount+ to start your nonce counter. Thereafter, keep track of the nonce in your application until each transaction confirms.
-
-((("Parity","nonce counting")))Parity's JSON RPC interface offers the +parity_nextNonce+ function, which returns the next nonce that should be used in a transaction. The +parity_nextNonce+ function counts nonces correctly, even if you construct several transactions in rapid succession without confirming them:
+당신이 거래를 생성하는 어플리케이션을 만들 때, pending 거래를 위해  pass:[<span class="keep-together"><code>getTransactionCount</code></span>] 에 의존할 수는 없다. 오직 pending 그리고 확인된 숫자가 같을 때(모든 outstanding 거래들이 확인되었을 때) 만 의 결과값을 믿을 수 있고 논스 카운팅을 시작할 수 있다. 그러므로, 각 거래가 모두 확인될 때까지 지속적으로 당신 어플의 논스값을 추적하라 (???)
+((("Parity","nonce counting")))패리티의 JSON RPC 인터페이스는 거래에 사용되어야 할 다음 논스 값을 반환해주는 +parity_nextNonce+ 기능을 제공한다. +parity_nextNonce+ 기능은 여러 거래들을 동시에 검증없이 빠르게 생성해도 정확하게 논스 값들을 카운트한다 :
 
 ++++
 <pre data-type="programlisting">
@@ -132,26 +130,26 @@ Parity has a web console for accessing the JSON RPC interface, but here we are u
 [[gaps_nonce]]
 ==== Gaps in Nonces, Duplicate Nonces, and Confirmation
 
-((("nonces","gaps in sequence of")))It is important to keep track of nonces if you are creating transactions programmatically, especially if you are doing so from multiple independent processes pass:[<span class="keep-together">simultaneously</span>].
+((("nonces","gaps in sequence of")))만약 당신이 거래를 자동적으로 생산해낸다면, 지속적으로 논스 값을 트래킹하는 것은 중요하다, 특히 복수의 독립적인 프로세스를 통해 한다면 말이다. pass:[<span class="keep-together">simultaneously</span>]. 
 
-The Ethereum network processes transactions sequentially, based on the nonce. That means that if you transmit a transaction with nonce 0 and then transmit a transaction with nonce 2, the second transaction will not be included in any blocks. It will be stored in the mempool, while the Ethereum network waits for the missing nonce to appear. All nodes will assume that the missing nonce has simply been delayed and that the transaction with nonce 2 was received out of sequence.
+이더리움 네트워크는 거래를 논스를 기반으로 해서 연속적으로 진행시킨다. 이 말은 만약에 특정 거래를 Nonce 값 0으로 발생시켰고 논스 2값으로 거래를 전송시켰을 때, 2번째 거래는 그 어느 블록에도 포함되지 않을 것이라는 것이다. mempool 에 저장될 것이고, 이더리움 네트워크는 비어있는 논스값이 나타날 때까지 기다릴 것이다. 모든 노드들이 비어있는 논스값은 단순히 지체된 것이고 논스 값 2를 가진 거래는 순서에 어긋나게 전송된 것으로 예상할 것이다.
 
-If you then transmit a transaction with the missing nonce 1, both transactions (nonces 1 and 2) will be processed and included (if valid, of course). Once you fill the gap, the network can mine the out-of-sequence transaction that it held in the mempool.
+만약 그 후에 비어있는 논스 값 1을 가진 거래를 전송했을 때, 2개의 거래 모두 (논스값 1,2의 거래) 절차에 따라 진행되고 포함될 것이다. (if valid, of course) gap 이 채워졌으면, 네트워크는 mempool 에 들어있는 다른 순서에 어긋난 거래들을 채굴할 수 있다.(mine)
 
-What this means is that if you create several transactions in sequence and one of them does not get officially included in any blocks, all the subsequent transactions will be "stuck," waiting for the missing nonce. A transaction can create an inadvertent "gap" in the nonce sequence because it is invalid or has insufficient gas. To get things moving again, you have to transmit a valid transaction with the missing nonce. You should be equally mindful that once a transaction with the "missing" nonce is validated by the network, all the broadcast transactions with subsequent nonces will incrementally become valid; it is not possible to "recall" a transaction!
+이 말은 즉 내가 여러개의 거래들을 차례대로 발생시켰는데, 그 중 하나라도 공식적으로 그 어떤 블록에도 포함이 되지 않았으면, 그 후의 나머지 모든 블록들은 "stuck" 되고 비어있는 논스 값을 기다릴 것이다. 유효하지 않거나 충분치 않은 가스 값으로 논스 열(sequence) 에서 예상치 못한 "gap"이 만들어질 수도 있다. 이것들을 다시 작동하게 하기 위해서, 비어있는 논스 값을 가진 유효한 거래를 전송해야 한다. "비어있는" 논스를 가진 거래가 네트워크에 의해 유효성이 검증된다면, 그 후의 논스를 가진 모든 전파된 거래들도 점차적으로 유효성을 인정받을 것이다 ; 거래를 "recall" 하는 것은 불가능하다!
 
-((("nonces","confirmation")))((("nonces","duplicated")))If, on the other hand, you accidentally duplicate a nonce, for example by transmitting two transactions with the same nonce but different recipients or values, then one of them will be confirmed and one will be rejected. Which one is confirmed will be determined by the sequence in which they arrive at the first validating node that receives them&#x2014;i.e., it will be fairly random.
+((("nonces","confirmation")))((("nonces","duplicated"))) 만약, 반대로, 당신이 실수로 논스 값을 복사했다면, 예를 들면 다른 수신자와 value를 가졌지만 같은 nonce 값을 가진 서로 다른 두 거래를 전송했다면, 그 중 하나는 검증되고 하나는 거부될 것이다.  If, on the other hand, you accidentally duplicate a nonce, for example by transmitting two transactions with the same nonce but different recipients or values, then one of them will be confirmed and one will be rejected. Which one is confirmed will be determined by the sequence in which they arrive at the first validating node that receives them&#x2014;i.e., 그리고 이것은 완벽한 랜덤이다.
 
-As you can see, keeping track of nonces is necessary, and if your application doesn't manage that process correctly you will run into problems. Unfortunately, things get even more difficult if you are trying to do this concurrently, as we will see in the next section.
+볼 수 있듯이, 논스값을 지속적으로 트래킹하는 것은 필수적이다, 만약 당신의 어플리케이션이 이 과정을 정확하게 관리하지 않으면 당신은 문제가 생길 것이다. 불행히도, 만약 이것을 동시에 진행하면 더 복잡해진다, 이 부분에 대해서는 다음 섹션에서 살펴보도록 하겠다.
 
 [[concurrency]]
-==== Concurrency, Transaction Origination, and Nonces
+==== 동시성(Concurrency),거래 생성 그리고 논스값
 
-((("concurrency, nonces and")))((("nonces","concurrency")))((("nonces","transaction origination")))Concurrency is a complex aspect of computer science, and it crops up unexpectedly sometimes, especially in decentralized and distributed real-time systems like pass:[<span class="keep-together">Ethereum</span>].
+((("concurrency, nonces and")))((("nonces","concurrency")))((("nonces","transaction origination")))동시성(Concurrency)은 컴퓨터 공학의 복잡한 개념중 하나이다 그리고 이는 예상치 못하는 경우에 발생하기도 한다, 특히 탈중앙화되고 분산화된 pass:[<span class="keep-together">Ethereum</span>] 같은 real-time 시스템에서는 더 그렇다. 
 
-In simple terms, concurrency is when you have simultaneous computation by multiple independent systems. These can be in the same program (e.g., multithreading), on the same CPU (e.g., multiprocessing), or on different computers (i.e., distributed pass:[<span class="keep-together">systems</span>]). Ethereum, by definition, is a system that allows concurrency of operations (nodes, clients, DApps) but enforces a singleton state through consensus.
+간단히 말하면, 동시성은 다수의 독립적인 시스템들에 의한 연산이 동시에 일어날 때 나타난다. 같은 프로그램 안에서 일수도 있고(multithreading), 같은 CPU 일수도 있고(multiprocessing) 또는 다른 컴퓨터일수도 있다(i.e., distributed pass:[<span class="keep-together">systems</span>]). 정의에 따르면 이더리움은 operation의 동시성을 허락하는 시스템이다 그러나 합의를 통해 singleton state 를 강조한다.
 
-Now, imagine that you have multiple independent wallet applications that are generating transactions from the same address or addresses. One example of such a situation would be an exchange processing withdrawals from the exchange's hot wallet (a wallet whose keys are stored online, in contrast to a cold wallet where the keys are never online). Ideally, you'd want to have more than one computer processing withdrawals, so that it doesn't become a bottleneck or single point of failure. However, this quickly becomes problematic, as having more than one computer producing withdrawals will result in some thorny concurrency problems, not least of which is the selection of nonces. How do multiple computers generating, signing, and broadcasting transactions from the same hot wallet account coordinate?
+이제, 같은 주소 혹은 주소들로부터 거래를 생성하는 다수의 독립적인 지갑 application 을 너가 가지고 있다고 가정해보자. One example of such a situation would be an exchange processing withdrawals from the exchange's hot wallet (a wallet whose keys are stored online, in contrast to a cold wallet where the keys are never online). Ideally, you'd want to have more than one computer processing withdrawals, so that it doesn't become a bottleneck or single point of failure. However, this quickly becomes problematic, as having more than one computer producing withdrawals will result in some thorny concurrency problems, not least of which is the selection of nonces. How do multiple computers generating, signing, and broadcasting transactions from the same hot wallet account coordinate?
 
 You could use a single computer to assign nonces, on a first-come first-served basis, to computers signing transactions. However, this computer is now a single point of failure. Worse, if several nonces are assigned and one of them never gets used (because of a failure in the computer processing the transaction with that nonce), all subsequent transactions get stuck.
 
@@ -786,6 +784,6 @@ These contracts can also be designed to require multiple signatures before execu
 
 The ability to implement multisignature transactions as a smart contract demonstrates the flexiblity of Ethereum. However, it is a double-edged sword, as the extra flexibility can lead to bugs that undermine the security of multisignature schemes. There are, in fact, a number of proposals to create a multisignature command in the EVM that removes the need for smart contracts, at least for the simple M-of-N multisignature schemes. This would be equivalent to Bitcoin's multisignature system, which is part of the core consensus rules and has proven to be robust and secure.
 
-=== Conclusions
+=== 결론
 
-Transactions are the starting point of every activity in the Ethereum system. Transactions are the "inputs" that cause the Ethereum Virtual Machine to evaluate contracts, update balances, and more generally modify the state of the Ethereum blockchain. Next, we will work with smart contracts in a lot more detail and learn how to program in the Solidity contract-oriented language.(((range="endofrange", startref="ix_06transactions-asciidoc0")))
+거래는 이더리움 시스템에서 모든 활동의 시발점이다. 거래는 EVM이 컨트랙트, 잔액 수정 그리고 더 일반적으로는 이더리움 블록체인의 상태를 수정을 평가하도록 하는 "input" 값이다. 다음으로, 스마트 컨트랙트 부분에서 훨씬 더 디테일하게 할 계획이고 솔리디티, 컨트랙트-기반 언어,를 어떻게 프로그래밍하는지에 대해서 배울 예정이다. (((range="endofrange", startref="ix_06transactions-asciidoc0")))
