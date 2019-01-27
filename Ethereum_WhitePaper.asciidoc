@@ -2,9 +2,82 @@
 
 === A NEXT GENERATION SMART CONTRACT & DECENTRALIZED APPLICATION PLATFORM
 ==== By Vitalik Buterin
-==== Translated by C-Link (Chung-ang Univeristy Blockchain Research Group)
+==== Translated by C-Link (Chung-ang Univeristy Blockchain Research Group) 최혜정(Hye Jung, Choi), 박민서 (Min-seo, Park)
 
 
 
-===== Page 1 
-사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때(set into motion), 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 
+===== Page 1
+
+사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때(set into motion), 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 지금까지 통화 단위로서의 "비트코인"은 중앙 은행이 없는 화폐라는 정치적 측면과 가격의 과도한 급등락 면에서(??) 대중의 관심을 많이 이끌었다. 그러나,(?) 사토시의 웅대한 실험(grand experiment)에서 똑같이 중요한 다른 부분이 있다(?) : 거래의 순서에 대한 공공의 동의(public agreement)를 허용하는(allow) POW 기반 블록체인의 concept이다. 비트코인은 어플리케이션으로서 first-to-file 시스템으로 묘사된다 : 만약 한 주체가 50 BTC를 가지고 있고, 동시에 A 와 B 에게 같은 50BTC를 보냈을 때, 처음으로 확인된 (confirmed ?) 거래만 정상적으로 처리 될 것이다. 두 거래 중에서 어떤 것이 더 먼저 왔는지 결정하는 본질적인 방법은 없다. 그리고 이것이 탈중앙화된 디지털 통화의 발전을 저지하였다? 제한하였다? (stymied). 사토시의 블록체인은 신뢰할 수 있는 최초의 탈중앙화된 솔루션이었다.(?) 그리고 이제, 관심은 이제 비트코인 기술의 2번째 부분과 블록체인 개념이 단지 화폐 이상으로 어떻게 쓰일 수 있을지에 집중되기 시작하였다(?)
+
+주로 인용되는 어플리케이션은 블록체인 상에서 사용되는 디지털 자산을 포함합니다. custom currencies 그리고 financial instruments 을 대표하는("colored coins"), 물리적 장치(physical device)에 기반한 소유권("smart property"), 도메인 이름과 같은 non-fungible한 자산("Name coin") 그리고 거기에 DEX(decentralized exchange), 금융 파생 상품(financial derivatives), p2p 도박 그리고 블록체인상 인물(identity)와 평판 시스템과 같은 고급 어플리케이션(advanced application)도 포함된다. 또다른 중요한 문의의 부분(area of inquiry)은 "스마트 컨트랙트"이다 - 디지털 자산의 이동이 임의로 사전에 명시된 규칙(arbitrary pre-specified rules) 에 따라 이루어지는 것이다. 예를 들어, 한 사람이 "A 는 X 만큼 매일 withdraw 할 수 있고, B 는 매일 Y 만큼 매일 withdraw 할 수 있다. 그리고 A 와 B가 동시에 withdraw 할 수 있다, 그리고 A 는 B의 철회를 막을 수 있다." 라는 재무 계약을 했다. 이것의 논리적 확장(logical extension)이 DAO(decentralized autonomous organizations) 이다. - 자산을 포함하고 전체 집단의 조례를 encode 하는 장기 스마트 컨트랙트. 이더리움이 되고자 하는 것은(intends to provide) "컨트랙트"를 만들 수 있는 튜링 완전한 프로그래밍 언어를 장착한 블록체인이다. "컨트랙트"는 arbitrary state function 들을 encode 하는데 쓰이고, 몇 줄의 코드로 사용자가 앞서 언급된 모든 시스템과 아직 나오지 않고 상상도 안되는 많은(?) 다른 시스템들을 다 만들 수 있다. 
+
+
+===== Page 2
+
+목차 
+
+* 역사 (History)
+** 상태 변환 시스템으로서의 비트코인 (Bitcoin As A State Transition System)
+** 채굴 (Mining)
+** 머클 트리 (Merkle Trees)
+** 블록체인 어플리케이션의 대안 (Alternative Blockchain Applications)
+** 스크립팅 (Scripting)
+
+* 이더리움 (Ethereum)
+** 이더리움 계정 (Ethereum Accounts)
+** 메시지와 거래 (Messages and Transactions)
+** 이더리움 상태 변환 함수 (Ethereum State Transition Function)
+** 코드 실행 (Code Execution)
+** 블록체인과 채굴 (Blockchain and Mining)
+
+* 어플리케이션 (Applications)
+** 토큰 시스템 (Token Systems)
+** 금융 파생상품 (Financial Derivatives)
+** 신원 및 평판 시스템 (Identity and Reputations Systems)
+** 탈중앙화된 파일 저장소 (Decentralized File Storage)
+** 이후의 어플리케이션 (Further Application)
+
+* 그 밖의 이슈들 (Miscellanea and Concerns)
+** 개정된 GHOST 도입 (Modified GHOST Implementation)
+** 수수료 (Fees)
+** 연산과 튜링 완전성 (Computation And Turing-Completeness)
+** 채굴 중앙화 (Mining Centralization)
+** 확장성 (Scalability)
+
+* Putting It All Together : Dapp
+* 결론 (Conclusion)
+* 참조 및 추가 자료 (References and Further Reading)
+
+
+===== Page 3
+
+
+
+===== Page 4
+
+History
+
+
+===== Page 5
+
+
+
+===== Page 6
+
+
+
+===== Page 7
+
+~~~. 시간이 지나면, 이것은 지속적이고 성장하는 "블록체인" 을 형성한다. (비트코인 원장의 최신상태로 계속 업데이트 하는)(?)
+
+이 패러다임에서 표현된 블록이 유효한지 여부를 확인하는 알고리즘은 아래와 같다: 
+
+    1. 블로이 참조한 이전 블록이 존재하고 유효한지 확인한다. 
+    2. 블록의 타임스탬프가 이전 블록의 타임스탬프보다 크고 2시간 이내에 있는지 확인한다. 
+    3. 블록의 POW 가 유효한지 확인한다. 
+    4. 이전 블록의 끝의 state를 S[0]으로 되게 한다.
+    5. TX 를 n 개의 거래를 가진 블록의 거래 리스트로 가정한다. 0 부터 n-1 까지의 모든 i 에 대해서 setS[i+1] = APPLY(S[i], TX[i]) 으로 한다. 만약 어떤        어플리케이션이던 error 가 나면 exit 하고 false 를 반환한다.
+    6. True 를 반환하고, S[n] 을 이 블록의 끝의 State 로 등록하라. (register S[n] as the state at the end of this block)
+
+기본적으로, 블록의 각 거래는 유효한 상태 변환(state transition)을 해야한다. 상태(state)는 어떤 방법으로도 블록에 기록되지 않는다(encode)는 사실에 집중하자 ;  
