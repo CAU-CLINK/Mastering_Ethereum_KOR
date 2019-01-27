@@ -3,7 +3,7 @@
 === A NEXT GENERATION SMART CONTRACT & DECENTRALIZED APPLICATION PLATFORM
 ==== By Vitalik Buterin
 ==== Translated by C-Link (Chung-ang Univeristy Blockchain Research Group) 
-=====최혜정(Hye Jung, Choi), 박민서 (Min-seo, Park)
+===== 최혜정(Hye Jung, Choi), 박민서 (Min-seo, Park)
 
 
 
