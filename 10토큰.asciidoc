@@ -63,31 +63,31 @@ fungible 한 것과 non-fungible 한 토큰의 예시를 이 단원 끝에서 �
 [[tokens_intrinsicality]]
 === Tokens and Intrinsicality
 
-((("tokens","intrinsicality")))The word "intrinsic" derives from the Latin "intra," meaning "from within."
+((("tokens","intrinsicality")))"내재적"이라는 단어는 라틴어 "from within" 이라느 의미르 가진 "intra"라느 단어에서 파생되었다.
 
-Some tokens represent digital items that are intrinsic to the blockchain. Those digital assets are governed by consensus rules, just like the tokens themselves. This has an important implication: tokens that represent intrinsic assets do not carry additional counterparty risk. If you hold the keys for a CryptoKitty, there is no other party holding that CryptoKitty for you&#x2014;you own it directly. The blockchain consensus rules apply and your ownership (i.e., control) of the private keys is equivalent to ownership of the asset, without any intermediary.
+몇몇 토큰들은 블록체인에 내재되어있는 디지털 상품들을 대표한다.(?) 그 디지털 자산들은 토큰과 마찬가지로 합의 규칙(consensus rules)에 의해 관리된다. 이는 중요한 점으 암시한다 : 내재적 가치를(assets) 대변하는 토큰들은 추가적인 거래 상대 리스크를 야기하지 않는다.(counterparty risk) 만약 당신이 CryptoKitty 의 키를 가지고 있다면, 그 CryptoKitty를 관리해주느 다른 주체는 존재하지 않는 것이다. 당신이 스스로 그것을 관리하는 것이다. 블록체인 합의 규칙이(consensus rule) 적용되고 프라이빗 키의 소유권은 자산의 소유권과 동일하게 된다. 중개자는 없다.(?)
 
-Conversely, many tokens are used to represent _extrinsic_ things, such as real estate, corporate voting shares, trademarks, and gold bars. The ownership of these items, which are not "within" the blockchain, is governed by law, custom, and policy, separate from the consensus rules that govern the token. In other words, token issuers and owners may still depend on real-world non-smart contracts. As a result, these extrinsic assets carry additional counterparty risk because they are held by custodians, recorded in external registries, or controlled by laws and policies outside the blockchain environment.
+반대로, 부동산, coporate voting shares, 트레이드 마크(trademarks) 그리고 골드바와 같은 _extrinsic_ 것을 대표하는 토큰들도 많이 쓰이고 있다.  이러한 것들의 소유권은 블록체인에 들어있지 않고, 법, custom, 정책에 의해 통제되며 토큰을 통제하는 합의 규칙과 분리되어 있다. 즉, 토큰 발행자와 소유자는 실세계의 non-smart contracts에 여전히 의존한다. 결과적으로, 이러하 외인적인 자산들은 더 많은 상대방 리스크(counterparty risk)를 야기한다. 왜냐하면, 그것들은 후견인(custodian)에 의해 관리되고, 외부에서 기록되고(?) 블록체인 환경 외부의 법과 정책에 의해서 관리되기 때문이다. 
 
-One of the most important ramifications of blockchain-based tokens is the ability to convert extrinsic assets into intrinsic assets and thereby remove counterparty risk. A good example is moving from equity in a corporation (extrinsic) to an equity or voting token in a _DAO_ or similar (intrinsic) organization.
+블록체인 기반의 토큰들의 ramification 중 가장 중요한 것은 외인적인 자산을 내재적 자산으로 바꾸어 counterparty risk 를 없애는 것이다. corporation(extrinsic)에서의 equity 에서 _DAO_ 혹은 그와 비슷한(내재된) 기관에서의 equity 혹으 투표 토큰으로 바뀌는 것이 중요한 예이다.
 
 [[using_tokens]]
-=== Using Tokens: Utility or Equity
+=== 토큰 사용하기(Using Tokens) : 유틸리티와 형평 (Utility or Equity)
 
-((("tokens","utility/equity types", id="ix_10tokens-asciidoc2", range="startofrange")))Almost all projects in Ethereum today launch with some kind of token. But do all these projects really need tokens? Are there any disadvantages to using a token, or will we see the slogan "tokenize all the things" come to fruition? In principle, the use of tokens can be seen as the ultimate management or organization tool. In practice, the integration of blockchain platforms, including Ethereum, into the existing structures of society means that, so far, there are many limitations to their applicability.
+((("tokens","utility/equity types", id="ix_10tokens-asciidoc2", range="startofrange")))오늘날의 이더리움 기반의 거의 모든 프로젝트들은 토큰 같은 것을 가지고 런칭한다. 그런데 정말 그 모든 프로젝트들이 토큰이 필요할까? 토큰을 사용하는데 있어서 불이익이 있을까? 혹으 "모든 것을 토큰화한다" 라는 슬로건이 현실이 될까? 원칙적으로, 토큰의 사용은 최고의 조직 관리(management or organization) 방법으로 보일 수 있다. 현실적으로, 지금까지는 기존 사회 구조에(structures of existing of society means) 이더리움을 포함한 블록체인 플랫폼을 적용하는 것은 그 applicability 에 많은 제약이 있음을 의미한다.
 
-Let's start by clarifying the role of a token in a new project. The majority of projects are using tokens in one of two ways: either as "utility tokens" or as "equity tokens." Very often, those two roles are conflated.
+새로운 프로젝트에서 토큰의 역할을 정확히 명시화 하는 것부터 시작하자. 대부분의 프로젝트에서는 토큰을 2가지 방법으로 사용한다 : "utility 토큰" 아니며 "equity ㅌ토큰" 이다. 아주 가끔 2개의 역할이 합쳐지기도 한다. 
 
-((("utility tokens","defined")))Utility tokens are those where the use of the token is required to gain access to a service, application, or resource. Examples of utility tokens include tokens that represent resources such as shared storage, or access to services such as social media networks.
+((("utility tokens","defined"))) 유틸리티 토큰은 서비스, 어플리케이션 혹은 리소스에 대한 권한을 얻기 위해서 사용된다. 공유 저장소같은 리소스나 소셜 미디어 네트워크 서비스에의 접근 권한 등을 대표하는 것이 유틸리티 토큰의 예이다. 
 
-((("equity tokens","defined")))Equity tokens are those that represent shares in the control or ownership of something, such as a startup. Equity tokens can be as limited as nonvoting shares for distribution of dividends and profits, or as expansive as voting shares in a decentralized autonomous organization, where management of the platform is through some complex governance system based on votes by the token holders.
+((("equity tokens","defined")))Equity tokens은 start up 과 같은 어떤 것의 소유권이나 통제권의 몫을 나타낼 때 쓰인다. Equity token 은 배당금이나 이이 분배와 같은 무투표 share 에 한정된다, 혹은 토큰 홀더들의 투표르 기반으로하 복잡한 거버넌스 시스템을 통해 통제되는 DAO 에서의 투표권으로 확장될 수 있다.
 
 [[its_not_duck]]
-==== It's a Duck!
+==== 오리닷! (It's a Duck!)
 
-((("equity tokens","utility tokens as")))((("utility tokens","equity tokens disguised as")))Many startups face a difficult problem: tokens are a great fundraising mechanism, but offering securities (equity) to the public is a regulated activity in most jurisdictions. By disguising equity tokens as utility tokens, many startups hope to get around these regulatory restrictions and raise money from a public offering while presenting it as a pre-sale of "service access vouchers" or, as we call them, utility tokens. Whether these thinly disguised equity offerings will be able to skirt the regulators remains to be seen.
+((("equity tokens","utility tokens as")))((("utility tokens","equity tokens disguised as"))) 많은 스타트업들은 어려운 문제를 직면했다.: 토큰은 훌륭한 모금 수단이지만, 대중에게 증권(주식)을 제공하는 것은 대부분 사법권 안의 규제된 행동이다.(?) equity 토큰을 utility 토큰으로 변장함으로써, 많은 스타트업들은 이 규제를 피하고 "서비스 접근 바우처의 pre-sale 로 대표되는 public offering 으로 금액을 모으고 싶어한다. 이처럼 얕게 위장된 equity offering 은 규제기관들을 skirt 할 수 있는지는 아직 지켜봐야 한다. (??)
 
-As the popular saying goes: "If it walks like a duck and quacks like a duck, it's a duck." Regulators are not likely to be distracted by these semantic contortions; quite the opposite, they are more likely to see such legal sophistry as an attempt to deceive the public.
+유명한 말이 말하듯 : "If it walks like a duck and quacks like a duck, it's a duck." 규제기관들은 이런 의미론적인 왜곡(semantic contortions)에 의해 주의를 빼앗기지 않는다; 완전 반대다, 그들으 대중을 기만하려는 법적인 궤변을 볼 가능성이 높다.(?)
 
 [[who_needs_utility_tokens]]
 ==== Utility Tokens: Who Needs Them?
@@ -1012,13 +1012,13 @@ There are reference implementations for many of these functions, for example in 
 As previously discussed, the decision to extend a token standard with additional functionality represents a trade-off between innovation/risk and interoperability/security.
 
 [[tokens_ico]]
-=== Tokens and ICOs
+=== 토큰 & ICO (Tokens and ICOs)
 
-((("Initial Coin Offerings (ICOs)","tokens and")))((("tokens","ICOs and")))Tokens have been an explosive development in the Ethereum ecosystem. It is likely that they will become a very important component of all smart contract platforms like Ethereum.
+((("Initial Coin Offerings (ICOs)","tokens and")))((("tokens","ICOs and")))토큰은 이더리움 생태계에서 폭발적인 발전을 해왔다. 그들으 이더리움과 같은 스마트 컨트랙트 플랫폼에서 매우 중요한 요인이 될 것이다. 
 
-Nevertheless, the importance and future impact of these standards should not be confused with an endorsement of current token offerings. As in any early-stage technology, the first wave of products and companies will almost all fail, and some will fail spectacularly. Many of the tokens on offer in Ethereum today are barely disguised scams, pyramid schemes, and money grabs.
+그렇지만, 이런 표준들의 중요성과 미래 영향력 (the importance and future impact of these standards)과 현재으 토큰 지급 보증과 헷갈리며 안된다.(?) 모든 기술의 초기단게에서 상품과 회사의 첫 시작(fist wave)은 대부분 실패할 것이다, 그리고 몇은 엄청나게(spectaacularly) 실패한다. 이더리움에서 지급되는 다수의 토큰들은 스캠, 피라미드 사기 그리고 갈취로 위장되어 있다.(?) 
 
-The trick is to separate the long-term vision and impact of this technology, which is likely to be huge, from the short-term bubble of token ICOs, which are rife with fraud. Token standards and the platform will survive the current token mania, and then they will likely change the world.
+트릭은(?) 장기간 비젼과 엄청날 기술의 영향력을 단기간의 토큰 ICO 거품으로부터 분리하는 것이다. 토큰 표준과 플랫폼은 현 토큰 열풍 속에서 살아날 것이고 그들은 세상을 바꿀 것이다.
 
 === 결론 
 
