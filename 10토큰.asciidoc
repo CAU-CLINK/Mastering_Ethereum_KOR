@@ -63,7 +63,7 @@ fungible 한 것과 non-fungible 한 토큰의 예시를 이 단원 끝에서 �
 [[tokens_intrinsicality]]
 === Tokens and Intrinsicality
 
-((("tokens","intrinsicality")))"내재적"이라는 단어는 라틴어 "from within" 이라느 의미르 가진 "intra"라느 단어에서 파생되었다.
+((("tokens","intrinsicality")))"내재적"이라는 단어는 라틴어 "from within" 이라는 의미를 가진 "intra"라는 단어에서 파생되었다.
 
 몇몇 토큰들은 블록체인에 내재되어있는 디지털 상품들을 대표한다.(?) 그 디지털 자산들은 토큰과 마찬가지로 합의 규칙(consensus rules)에 의해 관리된다. 이는 중요한 점으 암시한다 : 내재적 가치를(assets) 대변하는 토큰들은 추가적인 거래 상대 리스크를 야기하지 않는다.(counterparty risk) 만약 당신이 CryptoKitty 의 키를 가지고 있다면, 그 CryptoKitty를 관리해주느 다른 주체는 존재하지 않는 것이다. 당신이 스스로 그것을 관리하는 것이다. 블록체인 합의 규칙이(consensus rule) 적용되고 프라이빗 키의 소유권은 자산의 소유권과 동일하게 된다. 중개자는 없다.(?)
 
