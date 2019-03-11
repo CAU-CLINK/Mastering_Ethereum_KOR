@@ -23,7 +23,7 @@
 
 접근 (Access):: A token can represent access rights and grant access to a digital or physical property, such as a discussion forum, an exclusive website, a hotel room, or a rental car.
 
-공평 (Equity):: 토큰은 디지털 조직(e.g, DAO) 또는 법적인 entity(e.g, corporation) 에서 주주 공평성을 나타낼 수 있다. 
+증권 (Equity):: 토큰은 디지털 조직(e.g, DAO) 또는 법적인 entity(e.g, corporation) 에서 주주 증권성(?)을 나타낼 수 있다. 
 
 투표권 (Voting):: 토큰은 디지털이나 법적 시스템에서 투표권으로써 사용될 수 있다.
 
@@ -65,18 +65,18 @@ fungible 한 것과 non-fungible 한 토큰의 예시를 이 단원 끝에서 �
 
 ((("tokens","intrinsicality")))"내재적"이라는 단어는 라틴어 "from within" 이라는 의미를 가진 "intra"라는 단어에서 파생되었다.
 
-몇몇 토큰들은 블록체인에 내재되어있는 디지털 상품들을 대표한다.(?) 그 디지털 자산들은 토큰과 마찬가지로 합의 규칙(consensus rules)에 의해 관리된다. 이는 중요한 점으 암시한다 : 내재적 가치를(assets) 대변하는 토큰들은 추가적인 거래 상대 리스크를 야기하지 않는다.(counterparty risk) 만약 당신이 CryptoKitty 의 키를 가지고 있다면, 그 CryptoKitty를 관리해주느 다른 주체는 존재하지 않는 것이다. 당신이 스스로 그것을 관리하는 것이다. 블록체인 합의 규칙이(consensus rule) 적용되고 프라이빗 키의 소유권은 자산의 소유권과 동일하게 된다. 중개자는 없다.(?)
+몇몇 토큰들은 블록체인에 내재되어있는 디지털 상품들을 대표한다.(?) 그 디지털 자산들은 토큰과 마찬가지로 합의 규칙(consensus rules)에 의해 관리된다. 이는 중요한 점을 암시한다 : 내재적 가치를(assets) 대변하는 토큰들은 추가적인 거래 상대 리스크를 야기하지 않는다.(counterparty risk) 만약 당신이 CryptoKitty 의 키를 가지고 있다면, 그 CryptoKitty를 관리해주는 다른 주체는 존재하지 않는 것이다. 당신이 스스로 그것을 관리하는 것이다. 블록체인 합의 규칙이(consensus rule) 적용되고 프라이빗 키의 소유권은 자산의 소유권과 동일하게 된다. 중개자는 없다.(?)
 
 반대로, 부동산, coporate voting shares, 트레이드 마크(trademarks) 그리고 골드바와 같은 _extrinsic_ 것을 대표하는 토큰들도 많이 쓰이고 있다.  이러한 것들의 소유권은 블록체인에 들어있지 않고, 법, custom, 정책에 의해 통제되며 토큰을 통제하는 합의 규칙과 분리되어 있다. 즉, 토큰 발행자와 소유자는 실세계의 non-smart contracts에 여전히 의존한다. 결과적으로, 이러하 외인적인 자산들은 더 많은 상대방 리스크(counterparty risk)를 야기한다. 왜냐하면, 그것들은 후견인(custodian)에 의해 관리되고, 외부에서 기록되고(?) 블록체인 환경 외부의 법과 정책에 의해서 관리되기 때문이다. 
 
 블록체인 기반의 토큰들의 ramification 중 가장 중요한 것은 외인적인 자산을 내재적 자산으로 바꾸어 counterparty risk 를 없애는 것이다. corporation(extrinsic)에서의 equity 에서 _DAO_ 혹은 그와 비슷한(내재된) 기관에서의 equity 혹으 투표 토큰으로 바뀌는 것이 중요한 예이다.
 
 [[using_tokens]]
-=== 토큰 사용하기(Using Tokens) : 유틸리티와 형평 (Utility or Equity)
+=== 토큰 사용하기(Using Tokens) : 유틸리티와 에퀴티 (Utility or Equity)
 
-((("tokens","utility/equity types", id="ix_10tokens-asciidoc2", range="startofrange")))오늘날의 이더리움 기반의 거의 모든 프로젝트들은 토큰 같은 것을 가지고 런칭한다. 그런데 정말 그 모든 프로젝트들이 토큰이 필요할까? 토큰을 사용하는데 있어서 불이익이 있을까? 혹으 "모든 것을 토큰화한다" 라는 슬로건이 현실이 될까? 원칙적으로, 토큰의 사용은 최고의 조직 관리(management or organization) 방법으로 보일 수 있다. 현실적으로, 지금까지는 기존 사회 구조에(structures of existing of society means) 이더리움을 포함한 블록체인 플랫폼을 적용하는 것은 그 applicability 에 많은 제약이 있음을 의미한다.
+((("tokens","utility/equity types", id="ix_10tokens-asciidoc2", range="startofrange")))오늘날의 이더리움 기반의 거의 모든 프로젝트들은 토큰 같은 것을 가지고 런칭한다. 그런데 정말 그 모든 프로젝트들이 토큰이 필요할까? 토큰을 사용하는데 있어서 불이익이 있을까? 혹은 "모든 것을 토큰화한다" 라는 슬로건이 현실이 될까? 원칙적으로, 토큰의 사용은 최고의 조직 관리(management or organization) 방법으로 보일 수 있다. 현실적으로, 지금까지는 기존 사회 구조에(structures of existing of society means) 이더리움을 포함한 블록체인 플랫폼을 적용하는 것은 그 applicability 에 많은 제약이 있음을 의미한다.
 
-새로운 프로젝트에서 토큰의 역할을 정확히 명시화 하는 것부터 시작하자. 대부분의 프로젝트에서는 토큰을 2가지 방법으로 사용한다 : "utility 토큰" 아니며 "equity ㅌ토큰" 이다. 아주 가끔 2개의 역할이 합쳐지기도 한다. 
+새로운 프로젝트에서 토큰의 역할을 정확히 명시화 하는 것부터 시작하자. 대부분의 프로젝트에서는 토큰을 2가지 방법으로 사용한다 : "utility 토큰" 아니며 "equity 토큰" 이다. 아주 가끔 2개의 역할이 합쳐지기도 한다. 
 
 ((("utility tokens","defined"))) 유틸리티 토큰은 서비스, 어플리케이션 혹은 리소스에 대한 권한을 얻기 위해서 사용된다. 공유 저장소같은 리소스나 소셜 미디어 네트워크 서비스에의 접근 권한 등을 대표하는 것이 유틸리티 토큰의 예이다. 
 
@@ -92,11 +92,11 @@ fungible 한 것과 non-fungible 한 토큰의 예시를 이 단원 끝에서 �
 [[who_needs_utility_tokens]]
 ==== Utility Tokens: Who Needs Them?
 
-((("utility tokens","issues to consider when using", id="ix_10tokens-asciidoc3", range="startofrange")))The real problem is that utility tokens introduce significant risks and adoption barriers for startups. Perhaps in a distant future "tokenize all the things" will become reality, but at present the set of people who have an understanding of and desire to use a token is a subset of the already small cryptocurrency market.
+((("utility tokens","issues to consider when using", id="ix_10tokens-asciidoc3", range="startofrange")))진짜 문제는 스타트업들에게는 유틸리티 토큰 도입에 심각한 리스크와 진입 장벽(적용 장벽?)이 있다는 것이다. 아마도 먼 미래에는 "모든 것을 토큰화"한다는 것이 현실이 될 것이다, 그러나 지금으로썬 이에 대한 이해와 토큰을 사용하고 싶어하는 사람들은 안그래도 작은 암호화폐 시장에서도 일부이다.  
 
-For a startup, each innovation represents a risk and a market filter. Innovation is taking the road least traveled, walking away from the path of tradition. It is already a lonely walk. If a startup is trying to innovate in a new area of technology, such as storage sharing over P2P networks, that is a lonely enough path. Adding a utility token to that innovation and requiring users to adopt tokens in order to use the service compounds the risk and increases the barriers to adoption. It's walking off the already lonely trail of P2P storage innovation and into the wilderness.
+스타트업들에게는, 모든 혁신이 리스크와 market filter를 동반한다. 혁신은 남들이 잘 가지 않았던 길을 가는 것이고 전통적인 방법과는 다른 것을 채택하는 것이다. 이미 외로운 길이다. 만약 스타트업이 신기술 분야에서 P2P 네트워크를 통한 저장소 공유와 같은 혁신을 해보려고 한다면, 엄청나게 외로운 길이다.(?) 그러한 혁신에 유틸리티 토큰을 도입하고 사용자들에게 이 서비스를 사용하려면 토큰을 사용하라고 요구하는 것은 위기를 합치는 것이고 적용 장벽을 높이는 것이다. 이는 안 그래도 외로운 p2p 저장 혁신의 길에서 이것도 벗어나 완전 광야로 나가는 것을 의미한다.
 
-Think of each innovation as a filter. It limits adoption to the subset of the market that can become early adopters of this innovation. Adding a second filter compounds that effect, further limiting the addressable market. You are asking your early adopters to adopt not one but two completely new technologies: the novel application/platform/service you built, and the token economy.
+모든 혁신을 필터로 생각해라. 이는 혁신의 얼리 어답터가 될 수 있는 시장의 subset으로 채택을 제한한다.(?) 2번째 필터를 더하는 것은 그 효과를 합치는 것이다, addressable 한 시장으로 한정짓는다. 얼리어답터가 되기 위해서는 1가지가 아닌 2가지의 완벽하게 새로운 기술을 더해야 한다. : 당신이 만든 참신한 어플리케이션 / 플랫폼 / 서비스 그리고 토큰 이코노미 
 
 For a startup, each innovation introduces risks that increase the chance of failure of the startup. If you take your already risky startup idea and add a utility token, you are adding all the risks of the underlying platform (Ethereum), broader economy (exchanges, liquidity), regulatory environment (equity/commodity regulators), and technology (smart contracts, token standards). That's a lot of risk for a startup.
 
@@ -114,13 +114,13 @@ One of the benefits of deploying services on general-purpose platforms like Ethe
 ((("tokens","reasons to adopt")))Make this decision for the right reasons. Adopt a token because your application _cannot work without a token_. Adopt it because the token lifts a fundamental market barrier or solves an access problem. Don't introduce a utility token because it is the only way you can raise money fast and you need to pretend it's not a public securities offering(((range="endofrange", startref="ix_10tokens-asciidoc3"))).(((range="endofrange", startref="ix_10tokens-asciidoc2")))
 
 [[token_std]]
-=== Tokens on Ethereum
+=== 이더리움에서 토큰 (Tokens on Ethereum)
 
-((("tokens","on Ethereum", id="ix_10tokens-asciidoc4", range="startofrange")))Blockchain tokens existed before Ethereum. ((("Bitcoin","as token")))In some ways, the first blockchain currency, Bitcoin, is a token itself. Many token platforms were also developed on Bitcoin and other cryptocurrencies before Ethereum. However, the introduction of the first token standard on Ethereum led to an explosion of tokens.
+((("tokens","on Ethereum", id="ix_10tokens-asciidoc4", range="startofrange")))블록체인 토큰은 이더리움 이전에도 존재했다. ((("Bitcoin","as token")))어떤 면에서 보면, 첫 블록체인 통화 비트코인 그 자체도 토큰이다. 많은 토큰 플랫폼들은 비트코인과 이더리움 이전의 다른 암호화폐를 기반으로 개발되었다. 그러나 이더리움의 첫 토큰 표준 배포가 토큰의 폭발적인 성장을 가져왔다. 
 
-((("Buterin, Vitalik","on tokens")))Vitalik Buterin suggested tokens as one of the most obvious and useful applications of a generalized programmable blockchain such as Ethereum. In fact, in the first year of Ethereum, it was common to see Vitalik and others wearing T-shirts emblazoned with the Ethereum logo and a smart contract sample on the back. There were several variations of this T-shirt, but the most common showed an implementation of a token.
+((("Buterin, Vitalik","on tokens")))비탈릭 뷰테린은 이더리움처럼 일반화되어있고 프로그래밍 할 수 있는 블록체인에서 토큰들을 가장 분명하고(obvious) 유용한 어플리케이션이라고 하였다. 사실, 이더리움 초창기에는 비탈릭과 나머지 사람들이 이더리움 로고와 스마트 컨트랙트 샘플이 뒷면에 박힌 티셔츠를 입고 다니는 것을 자주 볼 수 있었다. 다양한 버전의 티셔츠가 있었지만, 제일 흔한 것은 토큰 도입이었다.
 
-Before we delve into the details of creating tokens on Ethereum, it is important to have an overview of how tokens work on Ethereum. Tokens are different from ether because the Ethereum protocol does not know anything about them. Sending ether is an intrinsic action of the Ethereum platform, but sending or even owning tokens is not. The ether balance of Ethereum accounts is handled at the protocol level, whereas the token balance of Ethereum accounts is handled at the smart contract level. In order to create a new token on Ethereum, you must create a new smart contract. Once deployed, the smart contract handles everything, including ownership, transfers, and access rights. You can write your smart contract to perform all the necessary actions any way you want, but it is probably wisest to follow an existing standard. We will look at such standards next. We discuss the pros and cons of the following standards at the end of the chapter.
+이더리움에서 토큰을 만들기를 정확하게 탐구하기 전에, 이더리움에서 토큰이 어떻게 작동하는지 에 대한 전체 오버뷰를 파악하는 것이 중요하다. 토큰은 이더와 다르다 왜냐하면 이더리움 프로토콜은 그들의 존재를 모르기 때문이다.(?) 이더 전송은 이더리움 플랫폼에서 내재된 행동이지만, 토큰을 소유하거나 전송하는 것은 아니다. 이더리움 계좌의 이더 잔고는 프로토콜 레벨에서 작동는데 비해, 토큰 잔고는 스마트 컨트랙트 레벨에서 작동된다. 이더리움에서 새로운 토큰을 만들기 위해서는 스마트 컨트랙트를 만들어야 한다. 한번 배포되면, 스마트 컨트랙트가 모든 것을 관리한다. 소유권, 전송, 접근 권한을 포함해서. 당신이 원하는 모든 기능을 수행할 수 있게 스마트 컨트랙트를 짤 수 있다, 그러나 현존하는 표준을 따르는 것이 바람직 할 것이다. 그런 표준들은 이후에 다룰 것이다. 챕터의 끝 부분에서 표준을 따르는 것의 득과 실에 대해서 다뤄보려고 한다.
 
 
 [[ERC20_std]]
@@ -128,14 +128,14 @@ Before we delve into the details of creating tokens on Ethereum, it is important
 
 ((("ERC20 token standard", id="ix_10tokens-asciidoc5", range="startofrange")))((("tokens","ERC20 standard", id="ix_10tokens-asciidoc6", range="startofrange")))The first standard was introduced in November 2015 by Fabian Vogelsteller as an Ethereum Request for Comments (ERC). It was automatically assigned GitHub issue number 20, giving rise to the name "ERC20 token." The vast majority of tokens are currently based on the ERC20 standard. The ERC20 request for comments eventually became Ethereum Improvement Proposal 20 (EIP-20), but it is mostly still referred to by the original name, ERC20.
 
-ERC20 is a standard for _fungible tokens_, meaning that different units of an ERC20 token are interchangeable and have no unique properties.
+ERC20 은 _fungible tokens_ 의 표준이다. 즉, 서로 다른 ERC 20 토큰들이 상호교환될 수 있고 unique properties 가 없다. 
 
 http://bit.ly/2CUf7WG[The ERC20 standard] defines a common interface for contracts implementing a token, such that any compatible token can be accessed and used in the same way. The interface consists of a number of functions that must be present in every implementation of the standard, as well as some optional functions and attributes that may be added by developers.
 
 [[ERC20_reqd_func]]
 ===== ERC20 required functions and events
 
-((("ERC20 token standard","required functions and events")))An ERC20-compliant token contract must provide at least the following functions and events:
+((("ERC20 token standard","required functions and events"))) ERC20-호환 토큰 컨트랙트는 아래의 함수들과 이벤트를 최소한 제공해야 한다 : 
 
 +totalSupply+:: Returns the total units of this token that currently exist. ERC20 tokens can have a fixed or a variable supply.
 
@@ -167,7 +167,7 @@ http://bit.ly/2CUf7WG[The ERC20 standard] defines a common interface for contrac
 [[ERC20_interface]]
 ===== The ERC20 interface defined in Solidity
 
-((("ERC20 token standard","interface defined in Solidity")))Here's what an ERC20 interface specification looks like in Solidity:
+((("ERC20 token standard","interface defined in Solidity"))) 솔리디티에서 ERC 20 interface 스펙은 다음과 같다 :
 
 [[ERC20_interface_example]]
 [source,solidity]
@@ -189,9 +189,9 @@ contract ERC20 {
 [[ERC20_data_struct]]
 ===== ERC20 data structures
 
-((("data mapping")))((("ERC20 token standard","data structures")))If you examine any ERC20 implementation you will see that it contains two data structures, one to track balances and one to track allowances. In Solidity, they are implemented with a _data mapping_.
+((("data mapping")))((("ERC20 token standard","data structures"))) 모든 ERC 20 구현체를 보면 2가지 자료 구조를 발견할 것이다, 1개는 잔고를 추적하는 것 다른 하나는 비용(allowance)을 추적하는 것. 솔리디티에서는  _data mapping_ 으로 구현되어 있다.
 
-The first data mapping implements an internal table of token balances, by owner. This allows the token contract to keep track of who owns the tokens. Each transfer is a deduction from one balance and an addition to another balance:
+첫 데이터 매핑 구현은 소유주에 따른 토큰 잔고를 나타내는 테이블이다. 이것이 누가 토큰을 소유했느냐를 계속 추적한다. 각 거래는 한 계좌에서 공제하여 다른 계좌에 더한다 : 
 
 [[balance_mapping]]
 [source,solidity]
@@ -199,7 +199,7 @@ The first data mapping implements an internal table of token balances, by owner.
 mapping(address => uint256) balances;
 ----
 
-The second data structure is a data mapping of allowances. As we will see in the next section, with ERC20 tokens an owner of a token can delegate authority to a spender, allowing them to spend a specific amount (allowance) from the owner's balance. The ERC20 contract keeps track of the allowances with a two-dimensional mapping, with the primary key being the address of the token owner, mapping to a spender address and an allowance amount:
+2번째 자료구조는 소비(allowances)에 대한 매핑이다. 다음 섹션에서 보겠지만, ERC20 토큰으로 소유주는 소유주의 잔고에서 특정 금액(allowances)를 쓸 수 있게 해줌으로써, spender 에게 권한을 위임할 수 있다. ERC 20 컨트랙트는 토큰 소유주의 주소를 primary key로 두고 spender 주소 그리고 allowance 양으로 매핑하는 2차원 매핑을 통해 지속적으로 allowances 을 추적한다 :
 
 [[allowance_mapping]]
 [source,solidity]
@@ -718,17 +718,17 @@ Tokens don't behave the same way as ether. Ether is sent with the +send+ functio
 
 ((("gas","tokens and")))((("tokens","gas and")))Consider another issue. To send ether or use any Ethereum contract you need ether to pay for gas. To send tokens, you _also need ether_. You cannot pay for a transaction's gas with a token and the token contract can't pay for the gas for you. This may change at some point in the distant future, but in the meantime this can cause some rather strange user experiences. For example, let's say you use an exchange or ShapeShift to convert some bitcoin to a token. You "receive" the token in a wallet that tracks that token's contract and shows your balance. It looks the same as any of the other cryptocurrencies you have in your wallet. Try sending the token, though, and your wallet will inform you that you need ether to do that. You might be confused&#x2014;after all, you didn't need ether to receive the token. Perhaps you have no ether. Perhaps you didn't even know the token was an ERC20 token on Ethereum; maybe you thought it was a cryptocurrency with its own blockchain. The illusion just broke.
 
-Some of these issues are specific to ERC20 tokens. Others are more general issues that relate to abstraction and interface boundaries within Ethereum. Some can be solved by changing the token interface, while others may need changes to fundamental structures within Ethereum (such as the distinction between EOAs and contracts, and between transactions and messages). Some may not be "solvable" exactly and may require user interface design to hide the nuances and make the user experience consistent regardless of the underlying distinctions.
+이 이슈들 중 몇개는 ERC 20 토큰에 대한 것들이다. 나머지는 abstraction , interface boundaries 같이 이더리움과 관련된 더욱 일반적인 것들이다. 몇몇은 토큰 인터페이스를 바꿈으로써 해결되고, 몇몇은 이더리움의 근본적인 구조를 바꾸자고 하는 것 들이다.(EOA 와 컨트랙트 구별 그리고 트랜잭션과 메세지차이) 몇가지들은 "해결되기" 어려운 것들이다 그리고 UI 디자인을 뉘앙스를 숨기게 하자고 하던가 기본 구별과 관계없이 UX 를 통일시키자고 하자고 한다.(?)
 
-In the next sections we will look at various proposals that attempt to address some of these issues.
+다음 섹션에서는 이 문제들을 해결하기 위한 다양한 제안들을 살펴보겠다. 
 
 [[ERC223_std]]
 ==== ERC223: A Proposed Token Contract Interface Standard
 
-((("ERC223 token standard proposal")))((("tokens","ERC223 standard proposal")))The ERC223 proposal attempts to solve the problem of inadvertent transfer of tokens to a contract (that may or may not support tokens) by detecting whether the destination address is a contract or not. ERC223 requires that contracts designed to accept tokens implement a function named +tokenFallback+. If the destination of a transfer is a contract and the contract does not have support for tokens (i.e., does not implement +tokenFallback+), the transfer fails.
+((("ERC223 token standard proposal")))((("tokens","ERC223 standard proposal")))ERC223 수신지( 도착 주소? destination address)가 컨트랙트인지 아닌지 확인함으로써 컨트랙트로의 부주의한 토큰 전송 문제를 해결하려고 제안되었다. (that may or may not support tokens) ERC223은 토큰을 받게 설계된 컨트랙트는 +tokenFallback+ 이라는 함수를 도입하자고 제안한다. 만약 수신지가 컨트랙트인데 토큰에 대한 서포트를 하지 않으면(아니면, +tokenFallback+ 함수가 없으면), 그 전송은 실패한다.
 
 [[is_contract]]
-To detect whether the destination address is a contract, the ERC223 reference implementation uses a small segment of inline bytecode in a rather creative way:
+수신지가 컨트랙트인지 확인하기 위해서, ERC223 참조 구현은 다소 독창적인 방법으로 인라인 바이트 코드의 작은 세그먼트를 사용했다.
 
 [source,solidity]
 ----
@@ -770,11 +770,11 @@ ERC223 is not widely implemented, and there is some debate in https://github.com
 
 ==== ERC777: A Proposed Token Contract Interface Standard
 
-((("ERC777 token standard proposal", id="ix_10tokens-asciidoc18", range="startofrange")))((("tokens","ERC777 standard proposal", id="ix_10tokens-asciidoc19", range="startofrange")))Another proposal for an improved token contract standard is https://eips.ethereum.org/EIPS/eip-777[ERC777]. This proposal has several goals, including:
+((("ERC777 token standard proposal", id="ix_10tokens-asciidoc18", range="startofrange")))((("tokens","ERC777 standard proposal", id="ix_10tokens-asciidoc19", range="startofrange")))개선된 토큰 컨트랙트 표준을 위한 또다른 제안은 https://eips.ethereum.org/EIPS/eip-777[ERC777] 이다. 이 제안은 여러가지 목표를 가지고 있다 : 
 
-* To offer an ERC20-compatible interface
-* To transfer tokens using a +send+ function, similar to ether transfers
-* To be compatible with ERC820 for token contract registration
+* ERC20와 호환가능한 interface 제공한다
+* 토큰을 전송하려면 +send+ 기능을 사용한다 , 이더 전송과 비슷하다 
+* 토큰 컨트랙트 등록을 위헤 ERC820 와 호환가능하게 한다. 
 * To allow contracts and addresses to control which tokens they send through a `tokensToSend` function that is called prior to sending
 * To enable contracts and addresses to be notified of the tokens' receipt by calling a `tokensReceived` function in the recipient, and to reduce the probability of tokens being locked into contracts by requiring contracts to provide a pass:[<span class="keep-together"><code>tokensReceived</code></span>] function
 * To allow existing contracts to use proxy contracts for the +tokensToSend+ and +tokensReceived+ functions
@@ -859,19 +859,19 @@ A http://bit.ly/2qkAKba[reference implementation] of ERC777 is linked in the pro
 [[erc721]]
 ==== ERC721: Non-fungible Token (Deed) Standard
 
-((("deed","and ERC721 non-fungible token standard", id="ix_10tokens-asciidoc20", range="startofrange")))((("ERC721 non-fungible token standard", id="ix_10tokens-asciidoc21", range="startofrange")))((("non-fungible tokens (NFTs)","ERC721 non-fungible token standard", id="ix_10tokens-asciidoc22", range="startofrange")))((("tokens","ERC721 non-fungible token standard", id="ix_10tokens-asciidoc23", range="startofrange")))All the token standards we have looked at so far are for _fungible_ tokens, meaning that units of a token are interchangeable. The ERC20 token standard only tracks the final balance of each account and does not (explicitly) track the provenance of any token.
+((("deed","and ERC721 non-fungible token standard", id="ix_10tokens-asciidoc20", range="startofrange")))((("ERC721 non-fungible token standard", id="ix_10tokens-asciidoc21", range="startofrange")))((("non-fungible tokens (NFTs)","ERC721 non-fungible token standard", id="ix_10tokens-asciidoc22", range="startofrange")))((("tokens","ERC721 non-fungible token standard", id="ix_10tokens-asciidoc23", range="startofrange")))지금까지 살펴보았던 토큰들은 모두 _fungible_ 했다. 즉, 토큰 단위로 상호교환이 가능했었다. ERC 20 토큰 표준은 각 계정의 마지막 잔고(final balance)만 추적하고 (명시적으로) 그 어떤 토큰의 출처를 추적하지 않습니다.
 
-((("deed","defined")))The http://bit.ly/2Ogs7Im[ERC721 proposal] is for a standard for _non-fungible_ tokens, also known as _deeds_.
+((("deed","defined"))) http://bit.ly/2Ogs7Im[ERC721 proposal] 은 _non-fungible_ 토큰들의 표준이다, 또한 _deeds_ 으로 알려져 있다.
 
-From the Oxford Dictionary:
+Oxford 사전에 의하면:
 
 ____
 _deed_: A legal document that is signed and delivered, especially one regarding the ownership of property or legal rights.
 ____
 
-The use of the word "deed" is intended to reflect the "ownership of property" part, even though these are not recognized as "legal documents" in any jurisdiction&#x2014;yet. It is likely that at some point in the future, legal ownership based on digital signatures on a blockchain platform will be legally recognized.
+단어 "deed"은 "자산의 소유권" 부분을 반영하기 위해서 사용되었다, 비록 아직 그 어떤 jurisdiction에도 "법적인 문서"로 표기된 것은 존재하지 않는다. 그러나 가까운 미래에, 블록체인 플랫폼 상의 디지털 서명을 기반으로한 법적인 소유권도 법적으로 인정될 것 같다. 
 
-Non-fungible tokens track ownership of a unique thing. The thing owned can be a digital item, such as an in-game item or digital collectible; or the thing can be a physical item whose ownership is tracked by a token, such as a house, a car, or an artwork. Deeds can also represent things with negative value, such as loans (debt), liens, easements, etc. The ERC721 standard places no limitation or expectation on the nature of the thing whose ownership is tracked by a deed and requires only that it can be uniquely identified, which in the case of this standard is achieved by a 256-bit pass:[<span class="keep-together">identifier</span>].
+NFT 유일한 것(unique thing)의 소유권을 추적한다. 소유될 수 있는 것은 게임 아이템 또는 디지털 소장품 같은 디지털 상품일수도 있고 소유권이 토큰으로 추적이 가능한 집 , 차 , 미술 작품처럼 물리적인 것일 수도 있다. Deeds는 빚(부채), lien , easement 기타 등등 음수 값도 다룰 수 있다. ERC 721 표준은 deed 에 의해 소유권이 추적되는 모든 것들에 대해서 한계나 expectation을 두지 않고 유일하게 식별될 수 있는 것만을 요구한다. 이 표준에서는 256 비트    pass:[<span class="keep-together">identifier</span>] achieved 된다.
 
 The details of the standard and discussion are tracked in two different GitHub pass:[<span class="keep-together">locations</span>]:
 
@@ -880,7 +880,7 @@ The details of the standard and discussion are tracked in two different GitHub p
 * https://github.com/ethereum/EIPs/pull/841[Continued discussion]
 
 [[map_deed_owner]]
-To grasp the basic difference between ERC20 and ERC721, it is sufficient to look at the internal data structure used in ERC721:
+ERC20 와 ERC721의 근본적인 차이점을 찾으려면, ERC 721에서 사용되는 그 내부 자료구조를 보는 것으로 충분하다 : 
 
 [source,solidity]
 ----
