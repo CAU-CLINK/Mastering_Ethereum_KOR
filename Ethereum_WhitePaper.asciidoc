@@ -6,9 +6,15 @@
 ===== 최혜정(Hye-Jung, Choi), 신준오(Jun-Oh, Shin), 박민서 (Min-seo, Park)
 
 
-사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때(set into motion), 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 지금까지 통화 단위로서의 "비트코인"은 중앙 은행이 없는 화폐라는 정치적 측면과 가격의 과도한 급등락 면에서(??) 대중의 관심을 많이 이끌었다. 그러나,(?) 사토시의 웅대한 실험(grand experiment)에서 똑같이 중요한 다른 부분이 있다(?) : 거래의 순서에 대한 공공의 동의(public agreement)를 허용하는(allow) POW 기반 블록체인의 concept이다. 비트코인은 어플리케이션으로서 first-to-file 시스템으로 묘사된다 : 만약 한 주체가 50 BTC를 가지고 있고, 동시에 A 와 B 에게 같은 50BTC를 보냈을 때, 처음으로 확인된 (confirmed ?) 거래만 정상적으로 처리 될 것이다. 두 거래 중에서 어떤 것이 더 먼저 왔는지 결정하는 본질적인 방법은 없다. 그리고 이것이 탈중앙화된 디지털 통화의 발전을 저지하였다? 제한하였다? (stymied). 사토시의 블록체인은 신뢰할 수 있는 최초의 탈중앙화된 솔루션이었다.(?) 그리고 이제, 관심은 이제 비트코인 기술의 2번째 부분과 블록체인 개념이 단지 화폐 이상으로 어떻게 쓰일 수 있을지에 집중되기 시작하였다(?)
+사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때(set into motion), 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 지금까지 통화 단위로서의 "비트코인"은 중앙 은행이 없는 화폐라는 정치적 측면과 높은 가격 변동성으로 대중의 관심을 많이 이끌었다. 
 
-주로 인용되는 어플리케이션은 블록체인 상에서 사용되는 디지털 자산을 포함합니다. custom currencies 그리고 financial instruments 을 대표하는("colored coins"), 물리적 장치(physical device)에 기반한 소유권("smart property"), 도메인 이름과 같은 non-fungible한 자산("Name coin") 그리고 거기에 DEX(decentralized exchange), 금융 파생 상품(financial derivatives), p2p 도박 그리고 블록체인상 인물(identity)와 평판 시스템과 같은 고급 어플리케이션(advanced application)도 포함된다. 또다른 중요한 문의의 부분(area of inquiry)은 "스마트 컨트랙트"이다 - 디지털 자산의 이동이 임의로 사전에 명시된 규칙(arbitrary pre-specified rules) 에 따라 이루어지는 것이다. 예를 들어, 한 사람이 "A 는 X 만큼 매일 withdraw 할 수 있고, B 는 매일 Y 만큼 매일 withdraw 할 수 있다. 그리고 A 와 B가 동시에 withdraw 할 수 있다, 그리고 A 는 B의 철회를 막을 수 있다." 라는 재무 계약을 했다. 이것의 논리적 확장(logical extension)이 DAO(decentralized autonomous organizations) 이다. - 자산을 포함하고 전체 집단의 조례를 encode 하는 장기 스마트 컨트랙트. 이더리움이 되고자 하는 것은(intends to provide) "컨트랙트"를 만들 수 있는 튜링 완전한 프로그래밍 언어를 장착한 블록체인이다. "컨트랙트"는 arbitrary state function 들을 encode 하는데 쓰이고, 몇 줄의 코드로 사용자가 앞서 언급된 모든 시스템과 아직 나오지 않고 상상도 안되는 많은(?) 다른 시스템들을 다 만들 수 있다. 
+그리고 사토시의 웅대한 실험(grand experiment)에서 이만큼 중요한 다른 부분이 있다. : 거래의 순서에 대한 공공의 동의(public agreement)를 허용하는(allow) POW 기반 블록체인의 concept이다. 
+
+비트코인은 어플리케이션으로서 first-to-file 시스템으로 묘사된다 : 만약 한 주체가 50 BTC를 가지고 있고, 동시에 A 와 B 에게 같은 50BTC를 보냈을 때, 먼저 확인된 거래만 정상적으로 처리 될 것이다. 그러나 두 거래 중에서 어떤 것이 더 먼저 왔는지 결정하는 본질적인 방법은 없다. 그리고 이것이 탈중앙화된 디지털 통화의 발전을 저지하였다. 사토시의 블록체인은 이 문제를 해결할 수 있는 최초의 믿을 만한 탈중앙화된 해결책이었다.그리고 이제, 관심은 이제 비트코인 기술의 2번째 부분과 블록체인 개념이 단지 화폐 이상으로 어떻게 쓰일 수 있을지에 집중되기 시작하였다(?)
+
+주로 인용되는 어플리케이션은 블록체인 상에서 사용되는 디지털 자산을 포함한다. 자체 통화 그리고 금융 기관을 대표하는("colored coins"), 물리적 장치(physical device)에 기반한 소유권("smart property"), 도메인 이름과 같은 non-fungible한 자산("Name coin") 그리고 거기에 탈중앙화 거래소 (DEX , decentralized exchange), 금융 파생 상품(financial derivatives), p2p 도박 그리고 블록체인상 인물(identity)과 평판 시스템과 같은 고급 어플리케이션(advanced application)도 포함된다. 
+
+또 다른 중요한 area of inquiry은 "스마트 컨트랙트" 이다. - 디지털 자산의 이동이 사전에 명시된 규칙에 따라 이루어지는 것이다. 예를 들어, 한 사람이 "A 는 X 만큼 매일 withdraw 할 수 있고, B 는 매일 Y 만큼 매일 withdraw 할 수 있다. 그리고 A 와 B가 동시에 withdraw 할 수 있다, 그리고 A 는 B의 withdraw를 막을 수 있다." 라는 재무 계약을 했다. 이것의 논리적 확장(logical extension)이 DAO(decentralized autonomous organizations) 이다. - 자산을 포함하고 전체 집단의 조례를 encode 하는 장기 스마트 컨트랙트. 이더리움이 되고자 하는 것은(intends to provide) "컨트랙트"를 만들 수 있는 튜링 완전한 프로그래밍 언어를 장착한 블록체인이다. "컨트랙트"는 arbitrary state function 들을 encode 하는데 쓰이고, 몇 줄의 코드로 사용자가 앞서 언급된 모든 시스템과 아직 나오지 않고 상상도 안되는 많은(?) 다른 시스템들을 다 만들 수 있다. 
 
 
 목차 
@@ -48,9 +54,11 @@
 
 ====== 역사
 
-재산 등록과 같은 대안 어플리케이션처럼 탈중앙화된 디지털 통화의 개념은 수십년 동안 우리 주변에 잇었다. 1980, 90년대의 익명 e-cash 프로토콜은 Chaumian blinding 이라고 알려진 low level 암호화  알고리즘에 기반하였고 높은 수준의 프라이버시를 보장하는 통화를 제공했지만, 그들은 중앙화된 중개자에 의존했기 때문에 프로토콜들은 대부분 영향력을 얻는 데에는 실패했다. 1998년, Wei Dai 의 b-money 가 처음으로 탈중앙화된 합의와 문제를 풀음으로써 통화가 생성되는 아이디어를 제안했지만, 구체적으로 어떻게 탈중앙화된 합의가 적용되는지에 대해서 제시하지 못하였다. 2005년에는 Hal Finney 가 "재사용 가능한 작업 증명" 개념을 제안했다, 이는 b-money 의 아이디어와 Adam Back 의 계산 난이도 해시캐시 퍼즐을 암호화폐 개념 생성을 위해 사용한 것이다, 그러나 신뢰 컴퓨팅을 백엔드로 사용함으로써, 그 이상을 실현하는데 한번 더 실패하였다. 2009년에, ~~~
+탈중앙화된 디지털 통화의 개념은 수십년 동안 우리 주변에 존재해왔다. 재산 등록과 같은 대안 어플리케이션도 그 중 하나이다. 1980에서 90년대의 익명 e-cash 프로토콜들은 주로 Chaumian blinding 이라고 알려진 원시적인 암호화 방법에 기반하였다. 이들은 높은 수준의 프라이버시를 보장하는 통화를 제공했지만, 중앙화된 중개자에 의존했기 때문에 대부분 큰 영향력을 얻지 못하였다. 1998년, Wei Dai가 처음으로 문제를 풀음으로써 통화가 생성되고 탈중앙화된 합의를 사용하는 아이디어 b-money를 제안했지만, 구체적으로 어떻게 탈중앙화된 합의가 적용되는지에 대해서 제시하지 못하였다. 2005년에는 Hal Finney 가 "재사용 가능한 작업 증명" 개념을 제안했다, 이는 b-money 의 아이디어와 Adam Back 의 계산 난이도 해시캐시 퍼즐을 암호화폐 개념 생성을 위해 사용하였다. 그러나 신뢰 컴퓨팅을 백엔드로 사용함으로써, 그 이상을 실현하는데 한번 더 실패하였다. 
 
-~~~~~~~ 역사 부분이 조금 다름
+Because currency is a first-to-file application, where the order of transactions is often of critical importance, decentralized currencies require a solution to decentralized consensus. 비트코인 이전의 화폐 프로토콜들이 직면했던 주요 roadblock?은 오랜 기간동안 BFT multiparty consensus system? 을 creating secure 하는 연구 여러가지가 진행되었음에도 불구하고 모든 연구들이 문제의 반 밖에 해결하지 못했다는 것이다. 프로토콜은 시스템에 참가한 모든 참가자들은 알려졌다고 가정하고, and produced security margins of the form "if N parties participate, then the system can tolerate up to N/4 malicious actors". The problem is, however, that in an anonymous setting such security margins are vulnerable to sybil attacks, where a single attacker creates thousands of simulated nodes on a server or botnet and uses these nodes to unilaterally secure a majority share.
+
+사토시에 의해서 제안된 이 혁신의 아이디어는 매우 간단한 탈중앙화된 컨센서스 프로토콜, 노드를 기반으로 하여 거래를 묶어서   10분마다 생성되는 "블록"이라는 형태로 만들어 성장만하는 블록체인 그리고 시스템에 참가할 수 있는 권리를 얻는 메카니즘으로 POW를 합한 것이다. 노드가 큰 연산능력을 가질수록 비례해서 큰 영향력을 가질 수 있고, coming up with more computational power than the entire network combined is much harder than simulating a million nodes. 비트코인 블록체인 모델의 단순함과 따분함에도 불구하고, 이는 충분히 좋은 것으로 판명되었고, 앞으로 5년 동안은 전세계의 200개가 넘는 화폐와 프로토콜의 기반이 될 것이다.
 
 ===== Page 5
 
@@ -75,7 +83,7 @@ APPLY({APPLY: $50, Bob: $50}, "send $20 from Alice to Bob") = { Alice: $30, Bob:
 APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
 ----
 
-비트코인에서 "상태" 는 채굴이 되었으나 아직 사용되지 않은 코인들의 모음(정확히 하자면 unspent transacrtion outputs 혹은 UTXO) 이고 각 UTXO 는 금액과 소유주(암호화된 20바이트의 Pulblic key) 정보가 있다. 거래는 1개 혹은 그 이상의 input과 1개 혹은 이상의 output을 가지고 있다. 각 input 은 실존하는 UTXO 와 주소의 소유자와 관련된 private key로부터 생성된 서명(cryptographic signature)을 포함하고 있고 각 output 은 상태에 추가될 새로운 UTXO 를 가지고 있다. 
+비트코인에서 "상태" 는 채굴이 되었으나 아직 사용되지 않은 코인들의 모음 (정확히 하자면 unspent transacrtion outputs 혹은 UTXO) 이고 각 UTXO 는 금액과 소유주(암호화된 20바이트의 Pulblic key) 정보가 있다. 거래는 1개 혹은 그 이상의 input과 1개 혹은 이상의 output을 가지고 있다. 각 input 은 실존하는 UTXO 와 주소의 소유자와 관련된 private key로부터 생성된 서명(cryptographic signature)을 포함하고 있고 각 output 은 상태에 추가될 새로운 UTXO 를 가지고 있다. 
 
 ===== Page 6
 
@@ -100,7 +108,8 @@ APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
 
 ===== Page 7
 
-시간이 지남에 따라, 이것은 지속적이고 성장하는 "블록체인" 을 형성한다. (비트코인 원장의 최신상태로 계속 업데이트 하는)(?)
+시간이 지남에 따라, 이것은 지속적이고 성장하는 "블록체인" 을 형성한다. 
+(비트코인 원장의 최신상태로 계속 업데이트 하는)(?)
 
 이 패러다임에서 표현된 블록이 유효한지 여부를 확인하는 알고리즘은 아래와 같다: 
 
@@ -108,7 +117,7 @@ APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
     2. 블록의 타임스탬프가 이전 블록의 타임스탬프보다 크고 2시간 이내에 있는지 확인한다. 
     3. 블록의 POW 가 유효한지 확인한다. 
     4. 이전 블록의 끝의 state를 S[0]으로 되게 한다.
-    5. TX 를 n 개의 거래를 가진 블록의 거래 리스트로 가정한다. 0 부터 n-1 까지의 모든 i 에 대해서 setS[i+1] = APPLY(S[i], TX[i]) 으로 한다. 만약 어떤        어플리케이션이던 error 가 나면 exit 하고 false 를 반환한다.
+    5. TX 를 n 개의 거래를 가진 블록의 거래 리스트로 가정한다. 0 부터 n-1 까지의 모든 i 에 대해서 setS[i+1] = APPLY(S[i], TX[i]) 으로 한다. 만약 어떤 어플리케이션이던 error 가 나면 exit 하고 false 를 반환한다.
     6. True 를 반환하고, S[n] 을 이 블록의 끝의 State 로 등록하라. (register S[n] as the state at the end of this block)
 
 기본적으로, 블록의 각 거래는 유효한 상태 변환(state transition)을 해야한다. 상태(state)는 어떤 방법으로도 블록에 기록되지 않는다(encode)는 사실에 집중하자 ;(?) 검증하는 노드에 의해 기록(기억?) 되는 것은 순전히 abstraction 하고 (보안적으로) 모든 블록에 의해 genesis state 부터 시작해서 계산될 수 있고 순차적으로 모든 블록의 모든 거래에서 적용된다. (?) 게다가, 채굴자가 블록에 거래를 넣는 순서가 중요하다는 것을 기억해라 ; 만약 거래 A , B 가 한 블록에 있고 B 는 A 에 의해서 만들어진 UTXO를 사용한다고 할 때, 그렇다면 블록은 A 다음에 B 가 와야만 유효할 것이다. 
@@ -124,7 +133,9 @@ APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
     3. 같은 100BTC를 그 스스로에게 보내는 거래를 발생시킨다.
     4. 그 스스로에게 보낸 거래가 더 먼저 왔다는 것을 확신시킨다. (?)
     
-1번 절차가 착수되고(taken place), 몇 분후에 어떤 채굴자가 블록에 그 거래를 포함시킬 것이다 그리고 블록 넘버 270000이라고 선언한다. 한 시간 후 쯤, 그 블록 후에 체인에 5개 이상의 블록이 더해졌고, 각각의 블록들은 비간접적으로 그 거래를 가리키고 결론적으로 "확인"(confirming) 한다. 이 시점에서, 그 상인은 이 지불을 finalized 된 것으로 인정하고 물품을 배송한다 ; 일단 이것을 디지털 상품이라고 했기에 그 배송은 바로 이루어질 것이다. 이제 공격자는 그 스스로에게 100BTC 를 보내는 거래를 발생시킨다. 만약 공격자가 바로 이것을 배포하면(simply releases it into the wild), 거래는 진행되지 못할 것이다; 채굴자들은 APPLY(S, TX) 를 계산하고 APPLY(S, TX)를 실행하고 TX 가 더 이상 상태에 존재하지 않는 UTXO 를 소비하는 것이라는 것을 알아챌 것이다. 그래서 대신에, 공격자는 블록체인의 "포크"를 만들고, 269999번을 부모 블록으로 가리키지만, 새로운 거래를 포함하는 또 다른 버전의 270000번 블록을 채굴하기 시작할 것이다. 블록 데이터가 변했으므로, 작업 증명도 한번 더 해야한다. 게다가, 공격자가 만든 새로운 버전의 270000번 블록은 다른 해시를 가지고 있기 때문에, 기존의 270001번 부터 270005번 블록은 이것을 "가리키지" 않는다 ; 그러므로 기존 체인과 공격자의 새로운 체인은 완벽하게 분리되어 있다. 포크가 되면, 가장 긴 블록체인(가장 큰 양의 작업증명을 기반으로 하는 체인)이 유효한 것으로 선택되는 규칙이 있다, 그래서 공격자가 270000번에서 혼자 채굴하고 있을 때 나머지 채굴자들은 270005 번에서 채굴할 것이다. 공격자 입장에서는 자신의 블록체인을 더 길게 만들기 위해서, 그는 네트워크 내 나머지 모든 연산 능력보다 더 많은 연산 능력을 가지고 있어야 할 것입니다. (이것이 "51% 공격")
+1번 절차가 착수되고(taken place), 몇 분후에 어떤 채굴자가 블록에 그 거래를 포함시킬 것이다 그리고 블록 넘버 270000이라고 선언한다. 한 시간 후 쯤, 그 블록 후에 체인에 5개 이상의 블록이 더해졌고, 각각의 블록들은 비간접적으로 그 거래를 가리키고 결론적으로 "확인"(confirming) 한다. 이 시점에서, 그 상인은 이 지불을 finalized 된 것으로 인정하고 물품을 배송한다 ; 일단 이것을 디지털 상품이라고 했기에 그 배송은 바로 이루어질 것이다. 이제 공격자는 그 스스로에게 100BTC 를 보내는 거래를 발생시킨다. 만약 공격자가 바로 이것을 배포하면(simply releases it into the wild), 거래는 진행되지 못할 것이다; 채굴자들은 APPLY(S, TX) 를 계산하고 APPLY(S, TX)를 실행하고 TX 가 더 이상 상태에 존재하지 않는 UTXO 를 소비하는 것이라는 것을 알아챌 것이다. 그래서 대신에, 공격자는 블록체인의 "포크"를 만들고, 269999번을 부모 블록으로 가리키지만, 새로운 거래를 포함하는 또 다른 버전의 270000번 블록을 채굴하기 시작할 것이다. 블록 데이터가 변했으므로, 작업 증명도 한번 더 해야한다. 게다가, 공격자가 만든 새로운 버전의 270000번 블록은 다른 해시를 가지고 있기 때문에, 기존의 270001번 부터 270005번 블록은 이것을 "가리키지" 않는다 ; 그러므로 기존 체인과 공격자의 새로운 체인은 완벽하게 분리되어 있다. 포크가 되면, 가장 긴 블록체인(가장 큰 양의 작업증명을 기반으로 하는 체인)이 유효한 것으로 선택되는 규칙이 있다, 
+
+그래서 공격자가 270000번에서 혼자 채굴하고 있을 때 나머지 채굴자들은 270005 번에서 채굴할 것이다. 공격자 입장에서는 자신의 블록체인을 더 길게 만들기 위해서, 그는 네트워크 내 나머지 모든 연산 능력보다 더 많은 연산 능력을 가지고 있어야 할 것입니다. (이것이 "51% 공격")
 
 ===== Page 9
 
@@ -133,7 +144,7 @@ APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
 왼쪽 : 머클 트리에 있는 소수의 노드들만 표현해도 브랜치의 유효성 증명에는 충분하다 (?)
 오른쪽 : 머클 트리의 어느 부분이라도 정보에 변화를 주면 결국엔 그 위에 어딘가에서는 불일치하게 된다. (?)
 
-image 
+그림
 
 비트코인의 중요한 확장성 기능중 하나는 블록이 다중-레벨 자료구조에 저장되어 있다는 것이다. 블록의 "해시"는 사실 블록 헤더의 헤시이다. (타임스탬프, 논스, 이전 블록 해시 그리고 블록의 모든 거래를 저장하고 있는 머클트리라고 불리우는 자료 구조의 루트 해시를 포함한 데이터의 roughly한 200바이트이다.)(?)
 
@@ -148,71 +159,155 @@ image
 
 ====== 대체 블록체인 어플리케이션
 
-블록체인을 다른 개념에 적용시키려는 시도는 오래되어왔다. 2005년, 닉 자보는 "secure property titles with owner authority"(?) 라는 개념을 내놓았다. 논문(문서 ? document?)에서는 "복제 데이터베이스 기술의 새로운 발전"이 어떻게 블록체인 기반 시스템에 도입될 지에 대한 설명을 도시 정주 장려 정책 (homesteading) , 불법 점유(adverse possesion) 그리고 조지안 토지세(Georgian land tax) 등과 같은 개념들을 포함한 정교한 프레임워크를 만들어 누가 어떤 땅을 소유했는지 저장하는 것으로 하였다.(?) 하지만, 그 당시에는 효과적인 복제 데이터베이스 시스템이 없었기 때문에 프로토콜도 실제로 구현되지 않았다. 2009년 이후, 그러나, 비트코인의 탈 중앙화된 컨센서스가 개발된 후에는 수개의 대체 어플리케이션들이 빠르게 등장하기 시작했다. 
+블록체인을 다른 개념에 적용시키려는 시도는 오래되어왔다. 2005년, 닉 자보는 "secure property titles with owner authority"(?) 라는 개념을 내놓았다. 논문(문서 ? document?)에서는 "복제 데이터베이스 기술의 새로운 발전"이 어떻게 블록체인 기반 시스템에 도입될 지에 대한 설명을 도시 정주 장려 정책 (homesteading) , 불법 점유(adverse possesion)그리고 조지안 토지세(Georgian land tax) 등과 같은 개념들을 포함한 정교한 프레임워크를 만들어 누가 어떤 땅을 소유했는지 저장하는 것으로 하였다.(?) 하지만, 그 당시에는 효과적인 복제 데이터베이스 시스템이 없었기 때문에 프로토콜도 실제로 구현되지 않았다. 2009년 이후, 그러나, 비트코인의 탈 중앙화된 컨센서스가 개발된 후에는 수개의 대체 어플리케이션들이 빠르게 등장하기 시작했다. 
 
 * Namecoin 
 
-2010년에 만들어진 Namecoin 은 탈중앙화된 이름 등록 데이터베이스로 가장 잘 알려져 있다. Tor, Bitcoin 그리고 BitMessage 같은 탈중앙화된 프로토콜에서는 사람들이 다른 사람들의 계정과 상호작용할 수 있게 계정을 식별하는 어떤 방법이 필요하다. 하지만, 기존의 모든 해결책들은 모두 pass:[<code> 1LW79wp5ZBqaHW1jL5TCiBCrhQYtHagUWy </code>] 와 같은 pseudorandom 해시값의 유형만 식별할 수 있었다. 이상적으로, 누군가는 "george" 와 같은 이름의 계정을 가지고 싶어할 것이다. 그러나, 문제는 "george"라는 이름으로 계정을 만들수 있으면, 다른 누군가도 동일한 과정을 통해 "george" 를 등록하고 사칭할 수 있다는 것이다.(?) 유일한 솔루션은 첫 번째 등록자는 성공하고 두 번째 부터는 실패하는 first - to - file 패러다임이다. - 비트코인 컨센서스 프로토콜에 가장 어울리는 문제이다.(???) Namecoin 은 블록체인 아이디어를 이름 등록 시스템에 적용한 가장 오래되고 성공적인 프로젝트이다. 
+2010년에 만들어진 Namecoin 은 탈중앙화된 이름 등록 데이터베이스로 가장 잘 알려져 있다. 
+Tor, Bitcoin 그리고 BitMessage 같은 탈중앙화된 프로토콜에서는 사람들이 다른 사람들의 계정과 
+상호작용할 수 있게 계정을 식별하는 어떤 방법이 필요하다. 
+하지만, 기존의 모든 해결책들은 모두 pass:[<code> 1LW79wp5ZBqaHW1jL5TCiBCrhQYtHagUWy </code>] 
+와 같은 pseudorandom 해시값의 유형만 식별할 수 있었다. 
+이상적으로, 누군가는 "george" 와 같은 이름의 계정을 가지고 싶어할 것이다. 
+그러나, 문제는 "george"라는 이름으로 계정을 만들수 있으면, 
+다른 누군가도 동일한 과정을 통해 "george" 를 등록하고 사칭할 수 있다는 것이다.(?) 
+유일한 솔루션은 첫 번째 등록자는 성공하고 두 번째 부터는 실패하는 first - to - file 패러다임이다. 
+- 비트코인 컨센서스 프로토콜에 가장 어울리는 문제이다.(???) 
+Namecoin 은 블록체인 아이디어를 이름 등록 시스템에 적용한 가장 오래되고 성공적인 프로젝트이다. 
 
 * Colored coins
 
-colored coins 의 목적은 사람들에게 그들만의 디지털 통화를 만들 수 있게 하는 프로토콜을 제공하는 것이다. or, in the important trivial case of a currency with one unit, digital tokens, on the Bitcoin blockchain. (?)
+colored coins 의 목적은 사람들에게 그들만의 디지털 통화를 만들 수 있게 하는 프로토콜을 제공하는 것이다. 
+or, in the important trivial case of a currency with one unit, digital tokens, 
+on the Bitcoin blockchain. (?)
 
 ===== Page 11
 
-colored coin 프로토콜에서는, one 이 공개적으로 특정 utxo에 색깔을 입힘으로써 새로운 통화를 issue 한다. 그리고 다른 UTXO의 색을 지속적으로 (recursively) 정의하여 그들을 만든 거래의 input 과 같은 색으로 한다.(?) (특별한 경우에는 혼색이 가능하다.) 이는 유저로 하여금 UTXO의 특정 색으로만 지갑을 유지할 수 있게 하고 일반 bitcoin 처럼 거래할 수 있게 한다, 
+colored coin 프로토콜에서는, 공개적으로 특정 비트코인 utxo에 색깔을 입힘으로써 새로운 통화를 "발행"할 수 있다. 그리고 다른 UTXO의 색을 지속적으로 (recursively) 정의하여 그들을 만든 거래의 input 과 같은 색으로 한다.(?) (특별한 경우에는 혼색이 가능하다.) 이는 유저로 하여금 UTXO의 특정 색으로만 지갑을 유지할 수 있게 하고 일반 bitcoin 처럼 거래할 수 있게 한다, backtracking through the blockchain to determine the color of any UTXO that they receive.
 
 * Metacoins 
 
-metacoin 의 아이디어 배경에는 비트코인 상에서 움직이지만 APPLY'를 이용한다. 비트코인 거래로 하지만, metacoin 거래를 저장하기 위해서 다른 상태 변환 함수를 사용한다. (APPLY')(?) 
+metacoin 의 아이디어 배경에는 비트코인 상에서 움직이지만 APPLY'를 이용한다. 비트코인 거래로 하지만, metacoin 거래를 저장하기 위해서 다른 상태 변환 함수를 사용한다. (APPLY')(?) Because the metacoin protocol cannot prevent invalid metacoin transactions from appearing in the Bitcoin blockchain, a rule is added that if APPLY'(S,TX) returns an error, the protocol defaults to APPLY'(S,TX) = S. This provides an easy mechanism for creating an arbitrary cryptocurrency protocol, potentially with advanced features that cannot be implemented inside of Bitcoin itself, but with a very low development cost since the complexities of mining and networking are already handled by the Bitcoin protocol.
+
+그래서, 보통, 컨센서스 프로토콜을 만드는데에는 2가지 접근 방식이 있다 : 
+독립적인 네트워크를 만드는 것 그리고 비트코인 상에 프로토콜을 만드는 것이다. 전자의 방법은 실행하기가 어렵다 , name coin 같은 경우에는 꽤나 성공한 케이스이다. 각각 개별적으로 구현을 할 때, 독립적인 블록체인을 bootstrap 해야하고, 모든 필수적인 상태변환과 네트워킹 관련 코드도 시험해봐야 한다. 
+
+Additionally, we predict that the set of applications for decentralized consensus technology will follow a power law distribution where the vast majority of applications would be too small to warrant their own blockchain, and we note that there exist large classes of decentralized applications, particularly decentralized autonomous organizations, that need to interact with each other. The Bitcoin-based approach, on the other hand, has the flaw that it does not inherit the simplified payment verification features of Bitcoin. SPV works for Bitcoin because it can use blockchain depth as a proxy for validity; at some point, once the ancestors of a transaction go far enough back, it is safe to say that they were legitimately part of the state. 반면, 블록체인 기반의 메타 프로토콜에서는 유효하지 않은 거래를 그들의 문맥에서는 함부로 포함하지 않게 할 수는 없다. Hence, a fully secure SPV meta-protocol implementation would need to backward scan all the way to the beginning of the Bitcoin blockchain to determine whether or not certain transactions are valid. Currently, all "light" implementations of Bitcoin-based meta-protocols rely on a trusted server to provide the data, arguably a highly suboptimal result especially when one of the primary purposes of a cryptocurrency is to eliminate the need for trust.
+
+====== Scripting
+
+아무 확장을 하지 않아도, 비트코인 프로토콜에서도 사실 간단한 개념의 "스마트 컨트랙트"를 제공하고 있기는 한다. 비트코인에서 UTXO는 단지 퍼블릭키만으로 그 소유권을 주장할 수 없다. but also by a more complicated script expressed 
+in a simple stack-based programming language. 이 패러다임에서는, UTXO 를 사용하는 거래는 반드시 스크립트를 만족시키는 데이터를 제공해야 한다.
 
 ===== Page 12
 
-~~~~
+Indeed, even the basic public key ownership mechanism isimplemented via a script: the script takes an elliptic curve signature as input, verifies it against the transaction and the address that owns the UTXO, and returns 1 if the verification is successful and 0 otherwise. Other, more complicated, scripts exist for various additional use cases. For example, one can construct a script that requires signatures from two out of a given three private keys to validate ("multisig"), a setup useful for corporate accounts, secure savings accounts and some merchant escrow situations. Scripts can also be used to pay bounties for solutions to computational problems, and one can even construct a script that says something like "this Bitcoin UTXO is yours if you can provide an SPV proof that you sent a Dogecoin transaction of this denomination to me", essentially allowing decentralized cross-cryptocurrency exchange.
+
 그러나, 비트코인에서 구현된 스크립팅 언어에는 몇가지 한계가 있다 : 
 
-* 튜링완전의 한계 (Lack of Turing-completeness) - 
+* 튜링완전의 한계 (Lack of Turing-completeness) - that is to say, while there is a large subset of computation that the Bitcoin scripting language supports, it does not nearly support everything. 가장 큰 부분은 루프(loop)를 제외한다는 것이다. 이는 거래 검증을 하는 동안 무한루프를 피하기 위함이다 ; 론적으로 스크립트 프로그래머들에게는 극복할 수 있는 장애물이다 , since any loop can be simulated by simply repeating the underlying code many times with an if statement, but it does lead to scripts that are very space-inefficient. For example, implementing an alternative elliptic curve signature algorithm would likely require 256 repeated multiplication rounds all individually included in the code.
 
-* 가치 - 인지 결여 (Value-blindness) - 
+* 가치 - 인지 결여 (Value-blindness) - there is no way for a UTXO script 
+to provide fine-grained control over the amount that can be withdrawn. 
+For example, one powerful use case of an oracle contract would be a hedging contract, 
+where A and B put in $1000 worth of BTC and after 30 days the script 
+sends $1000 worth of BTC to A and the rest to B. 
+This would require an oracle to determine the value of 1 BTC in USD, 
+but even then it is a massive improvement in terms of trust 
+and infrastructure requirement over the fully centralized solutions 
+that are available now. However, because UTXO are all-or-nothing, 
+the only way to achieve this is through the very inefficient hack of 
+having many UTXO of varying denominations (eg. one UTXO of 2k for every k up to 30) 
+and having the oracle pick which UTXO to send to A and which to B.
 
 * 상태 결여 (Lack of state) - UTXO 는 사용이 되거나 안되거나 둘 중 하나만 가능하다 ; multi - stage contract 나 스크립트는 있을 수 없다 which keep any other internal state beyond that. 이는 multi-stage option contract, 탈중앙화된 거래 제공 또는 2단계 암호화 적용 프로토콜 (two - stage cryptographic commitment protocols) (necessary for secure computational bounties) 를 만드는 것 어렵게 한다. 이는 곳 UTXO는 오직 간단하고 one - off contract 에만 사용될 수 있고 탈 중앙화 조직 같은 복잡한 "stateful" contract 는 못 만들고 meta - protocol 은 적용시키기 어렵다. 가치 인지 결여(value blindness) 이면서 binary state 인 것은 withdrawal limits 를 적용하는 다른 중요한 어플리케이션도 불가능하다는 것이다. (?)
 
-* 블록체인 인지 결여 (Blockchain-blindness) - UTXO는 난스(nonce) 와 이전 해시와 같은 블록체인 데이터를 인지하지 못한다. 이는 도박과 여러 다른 카테고리들의 어플리케이션을 제한한다. 잠재적인 가치를 지닌 randomness 한 source 를 막음으로써 (?)
+* 블록체인 인지 결여 (Blockchain-blindness) - UTXO는 난스(nonce) 와 이전 해시와 같은 블록체인 데이터를 
+인지하지 못한다. 이는 도박과 여러 다른 카테고리들의 어플리케이션을 제한한다. 
+잠재적인 가치를 지닌 randomness 한 source 를 막음으로써 (?)
 
 ===== Page 13
 
-그러므로, 암호화폐를 기반으로 한 발전된 어플리케이션을 만드는 것을 3가지 관점에서 바라보았다 : 새로운 블록체인을 만드는 것, 비트코인 위에서 스크립트 언어를 쓰는 것 그리고 비트코인 위에서 메타 프로토콜을 만드는 것이다. 새로운 블록체인을 만들면 기능 면(feature set)에서 무한한 자유도를 허용하지만, 개발 비용과 시간의 측면에서는 많은 투자를 해야한다. (bootstrapping) 스크립트 언어를 쓰면 구현하고 표준화하기 쉽지만 기능 , 메타 프로토콜 면에서는 많은 제약이 있고 확장성의 문제에 결함이 있다. 이더리움으로 우리는 3가지 패러다임의 이득을 동시에 제공할 수 있는 일반화 된 프레임워크를 만드는 것을 목표로 하고 있다.
+그러므로, 암호화폐를 기반으로 한 발전된 어플리케이션을 만드는 것을 3가지 관점에서 바라보았다 : 
+새로운 블록체인을 만드는 것, 비트코인 위에서 스크립트 언어를 쓰는 것 그리고 비트코인 위에서 
+메타 프로토콜을 만드는 것이다. 새로운 블록체인을 만들면 기능 면(feature set)에서 무한한 자유도를 허용하지만, 
+개발 비용과 시간의 측면에서는 많은 투자를 해야한다. 
+(bootstrapping) 스크립트 언어를 쓰면 구현하고 표준화하기 쉽지만 기능 , 
+메타 프로토콜 면에서는 많은 제약이 있고 확장성의 문제에 결함이 있다. 
+이더리움으로 우리는 3가지 패러다임의 이득을 동시에 제공할 수 있는 일반화 된 프레임워크를 만드는 것을 목표로 하고 있다.
 
 ====== Ethereum
-이더리움의 의도는 이들을 합치고 스크립트 언어의 개념, 알트코인 그리고 온체인 메타 프로토콜을 개선하고 확장성, 표준화, 기능 온정성, 개발 편의성 그리고 서로 다른 패러다임들이 제공하는 상호운용성을 동시에 제공하며 합의를 기반으로하는 임의의 어플리케이션을 만들 수 있게 하는 것이다.(?) 이더리움은 이를 필수적이며 궁극적으로 추상적인 기본 레이어을 만듬으로써 해냈다 : 튜링 완전한 언어로 구현된 블록체인 , 누구나 스마트 컨트랙트를 짜고 소유권, 거래 형식 그리고 상태 변환 함수에 대한 임의의 규칙을 만들 수 있는 dApp 을 만들 수 있게 했다. 네임코인의 기본적인 규칙은 두 줄의 코드로 쓰여질 수 있고, 통화나 평판 시스템과 같은 다른 프로토콜도 20줄 안에 쓰여질 수 있다이다. 값을 가지고 있고 오직 특정 상황에서만 열리는 암호화된 박스인 스마트 컨트랙트 또한 우리 플랫폼 상에서 만들어질 수 있고 이는 비트코인의 스크립트 언어에 의해서 제공되는 것보다 튜링 완전성, 가치 인지, 블록체인 인지 그리고 상태라는 요소가 더해져 훨씬 더 광범위한 힘을 가지고 있다. (?)
+이더리움의 의도는 이들을 합치고 스크립트 언어의 개념, 
+알트코인 그리고 온체인 메타 프로토콜을 개선하고 확장성, 표준화, 기능 온정성, 개발 편의성 
+그리고 서로 다른 패러다임들이 제공하는 상호운용성을 동시에 제공하며 합의를 기반으로하는 
+임의의 어플리케이션을 만들 수 있게 하는 것이다.(?) 
+이더리움은 이를 필수적이며 궁극적으로 추상적인 기본 레이어을 만듬으로써 해냈다 : 
+튜링 완전한 언어로 구현된 블록체인 , 누구나 스마트 컨트랙트를 짜고 소유권, 
+거래 형식 그리고 상태 변환 함수에 대한 임의의 규칙을 만들 수 있는 dApp 을 만들 수 있게 했다. 
+네임코인의 기본적인 규칙은 두 줄의 코드로 쓰여질 수 있고, 
+통화나 평판 시스템과 같은 다른 프로토콜도 20줄 안에 쓰여질 수 있다이다. 
+값을 가지고 있고 오직 특정 상황에서만 열리는 암호화된 박스인 스마트 컨트랙트 또한 
+우리 플랫폼 상에서 만들어질 수 있고 이는 비트코인의 스크립트 언어에 의해서 제공되는 것보다 
+튜링 완전성, 가치 인지, 블록체인 인지 그리고 상태라는 요소가 더해져 훨씬 더 광범위한 힘을 가지고 있다. (?)
 
 ====== Ethereum Accounts
 
-이더리움 상에서는 상태는 "계정"이라고 불리우는 것에 의해서 만들어진다. 각 계정은 20 바이트의 주소이고 상태 전이는 계정 간의 값과 정보의 직접적인 전송으로 이루어진다.(?) 이더리움 계정은 4가지 요소를 가지고 있다. 
+이더리움 상에서는 상태는 "계정"이라고 불리우는 것에 의해서 만들어진다. 
+각 계정은 20 바이트의 주소이고 상태 전이는 계정 간의 값과 정보의 직접적인 전송으로 이루어진다.(?) 
+이더리움 계정은 4가지 요소를 가지고 있다. 
 
 * 논스 값 , 각 거래가 한번 씩만 처리되게 하는 카운터
 * 계정의 현재 이더 잔고량
 * 계정의 컨트랙트 코드 (존재여부에 따라 다름)
 * 계정의 스토리지 (디폴트 값은 비어있음)
 
-"이더"는 이더리움의 주요 내부 화폐이고 거래 수수료로 사용된다. 보통, 2가지 종류의 계정이 있다 : 개인키에 의해서 통제되는 EOA (externally owned accounts) , 컨트랙트 코드에 의해서 통제되는 CA(contract accounts). EOA 는 코드가 없고 거래를 만들고 서명함으로써 EOA 에서부터 메세지를 보낼 수 있다 ;
+"이더"는 이더리움의 주요 내부 화폐이고 거래 수수료로 사용된다. 보통, 2가지 종류의 계정이 있다 : 
+개인키에 의해서 통제되는 EOA (externally owned accounts) , 
+컨트랙트 코드에 의해서 통제되는 CA(contract accounts). 
+EOA 는 코드가 없고 거래를 만들고 서명함으로써 EOA 에서부터 메세지를 보낼 수 있다 ;
 
 ===== Page 14
 
-CA 에서는 메세지를 받을 때마다 코드를 실행하고 읽고 내부 스토리지에 쓸 수 있게 하며 다른 메세지를 보내거나 계약을 만들 수 있다. (차례대로)
+CA 에서는 메세지를 받을 때마다 코드를 실행하고 읽고 내부 스토리지에 쓸 수 있게 하며 다른 메세지를 보내거나 
+계약을 만들 수 있다. (차례대로)
 
 ====== Messages and Transaactions
 
-이더리움에서 "메세지"는 어떤 면에서 보면 비트코인의 "거래"와 비슷하다, 그런데 3가지 중요한 다른 점이 있다. 첫째는, 이더리움 메세지는 외부적 주체나 컨트랙트에 의해 만들어질 수 있지만, 비트코인은 오직 외부에 의해서 생성된다. 둘째, 이더리움 메세지는 데이터를 포함시키는 explicit 한 방법이 있다. 마지막으로, 이더리움 메세지의 recipient는 ,만약 CA 라면, 답변을 할 수 있다 ; 이는 이더리움 메세지가 함수의 개념을 포괄하고 있다는 것을 의미한다. 
+이더리움에서 "메세지"는 어떤 면에서 보면 비트코인의 "거래"와 비슷하다, 
+그런데 3가지 중요한 다른 점이 있다. 
+첫째는, 이더리움 메세지는 외부적 주체나 컨트랙트에 의해 만들어질 수 있지만, 
+비트코인은 오직 외부에 의해서 생성된다. 
+둘째, 이더리움 메세지는 데이터를 포함시키는 explicit 한 방법이 있다. 
+마지막으로, 이더리움 메세지의 recipient는 ,만약 CA 라면, 답변을 할 수 있다 ; 
+이는 이더리움 메세지가 함수의 개념을 포괄하고 있다는 것을 의미한다. 
 
-이더리움에서 "거래"라는 용어는 EOA에서 보낸 메세지를 포함한 서명된 데이터 패키지를 의미한다. 거래는 메세지의 수신자, 송신자의 서명 증명, 이더의 양과 보내져야할 데이 터 그리고 STRTGAS & GASPRICE 라고 불리우는 값을 포함한다. 코드의 기하급수적인 증가와 무한 루프를 방지하기 위해서, 실행하는 과정에서 나타날 initial message 그리고 추가적인 메세지을 포함한 코드를 실행하는데 있어서 각 거래에서 소비될 총량의 한계양을 설정해야 한다.(?) STARTGAS 는 한계량, GASPRICE 는 각 연산 단계에서 채굴자에게 지급할 수수료이다. (pay to the miner per computational step?). 만약 거래 실행에서 "가스가 다 떨어지게 되면", 모든 상태 변화는 전부다 실행 이전으로 되돌아간다. 수수료 지불을 예외로 하고, 만약 가스가 남은 상태에서 거래 실행이 끝나면 그 남은 분은 송신자에게 되돌아간다. 별도로 컨트랙트를 생성할 때 사용되는 별도의 거래의 종류와 그에 상응하는 메세지 타입도 있다; 컨트랙트의 주소는 계정 논스와 거래의 해시값을 기반으로 계산한다.
+이더리움에서 "거래"라는 용어는 EOA에서 보낸 메세지를 포함한 서명된 데이터 패키지를 의미한다. 
+거래는 메세지의 수신자, 송신자의 서명 증명, 이더의 양과 보내져야할 데이터 
+그리고 STRTGAS & GASPRICE 라고 불리우는 값을 포함한다. 
+코드의 기하급수적인 증가와 무한 루프를 방지하기 위해서, 
+실행하는 과정에서 나타날 initial message 
+그리고 추가적인 메세지을 포함한 코드를 실행하는데 있어서 각 거래에서 소비될 총량의 한계양을 설정해야 한다.(?) 
+STARTGAS 는 한계량, GASPRICE 는 각 연산 단계에서 채굴자에게 지급할 수수료이다. 
+(pay to the miner per computational step?). 
+만약 거래 실행에서 "가스가 다 떨어지게 되면", 모든 상태 변화는 전부다 실행 이전으로 되돌아간다. 
+수수료 지불을 예외로 하고, 만약 가스가 남은 상태에서 거래 실행이 끝나면 그 남은 분은 송신자에게 되돌아간다. 
+별도로 컨트랙트를 생성할 때 사용되는 별도의 거래의 종류와 그에 상응하는 메세지 타입도 있다; 
+컨트랙트의 주소는 계정 논스와 거래의 해시값을 기반으로 계산한다.
 
-메세지 메카니즘의 가장 중요한 결론은 이더리움의 "first class citizen" 의 property 이다 - 컨트랙트가 외부의 계정과 동등한 권한을 가지는 것이 이 사상이다. 이는 메세지를 보내거나 다른 컨트랙트를 만드는 것을 포함한다. (?) 이는 컨트랙트가 동시에 여러가지 다른 역할을 수행할 수 있게 한다 : 한개는 탈중앙화된 조직의 멤버(1)가 될 수 있다.  맞춤형 퀀텀-증명 Lamport 서명(3)을 사용한 편집증적인 개인과 보안을 위해 5개의 키를 사용해야하는 계정(4)을 사용하는 다중 서명 주체 사이의 에스크로 계정(2) 역할을 할 수 있다. 이더리움 플랫폼의 장점은 탈중앙화 되어있는 조직이고 escrow contract 는 각 참가자의 계정이 어떤 종류의 계정인지 굳이 알 필요없다는 것이다.
+메세지 메카니즘의 가장 중요한 결론은 이더리움의 "first class citizen" 의 property 이다 
+- 컨트랙트가 외부의 계정과 동등한 권한을 가지는 것이 이 사상이다. 
+이는 메세지를 보내거나 다른 컨트랙트를 만드는 것을 포함한다. (?) 
+이는 컨트랙트가 동시에 여러가지 다른 역할을 수행할 수 있게 한다 : 
+한개는 탈중앙화된 조직의 멤버(1)가 될 수 있다.  
+맞춤형 퀀텀-증명 Lamport 서명(3)을 사용한 편집증적인 개인과 보안을 위해 
+5개의 키를 사용해야하는 계정(4)을 사용하는 다중 서명 주체 사이의 에스크로 계정(2) 역할을 할 수 있다. 
+이더리움 플랫폼의 장점은 탈중앙화 되어있는 조직이고 escrow contract 는 
+각 참가자의 계정이 어떤 종류의 계정인지 굳이 알 필요없다는 것이다.
 // escrow account 
 
 ===== Page 15
 
-img
+그림
 
 이더리움 상태변환 함수는 APPLY(S, TX) -> S' 은 다음과 같이 정의될 수 있다:
 
@@ -236,16 +331,37 @@ img
     if !contract.storage[msg.data[0]]:
         contract.storage[msg.data[0]]=msg.data[1]
 
-현실에서는 컨트랙트 코드는 low-level EVM 코드로 쓰여져 있다는 것임을 주목하라 ;(?) 이 예시는 serpent 로 쓰여져 있고 우리의 high-level 언어 중 하나이다, 확실히 하자면 이것은 EVM 코드로 compile down 될 수 있다. 컨트랙트의 storage 가 empty 상태에서 시작하고 10 ether 의 전송 거래를 2000gas , 0.001 ether 의 상태로 2개 데이터 필드 : [pass:[<code> 2, 'CHARLIE'  </code>]] 와 함께 진행하였다.(?) 이 경우에는 상태변환 함수 과정은 다음과 같이 이루어진다 : 
+현실에서는 컨트랙트 코드는 low-level EVM 코드로 쓰여져 있다는 것임을 주목하라 ;(?) 
+이 예시는 serpent 로 쓰여져 있고 우리의 high-level 언어 중 하나이다, 
+확실히 하자면 이것은 EVM 코드로 compile down 될 수 있다. 
+컨트랙트의 storage 가 empty 상태에서 시작하고 10 ether 의 전송 거래를 
+2000gas , 0.001 ether 의 상태로 
+2개 데이터 필드 : [pass:[<code> 2, 'CHARLIE'  </code>]] 와 함께 진행하였다.(?) 
+이 경우에는 상태변환 함수 과정은 다음과 같이 이루어진다 : 
 
     1. 거래가 유효하고 well formed 되었는지 확인한다. (?)
-    2. sender 가 최소한 2000 * 0.001 = 2 ether 를 가지고 있는지 확인한다. 만약 그렇다면, sender 의 account 에서 2 ether 를 뺀다. 
-    3. gas 를 2000 로 설정한다 ; 거래는 170 바이트이고 byte-fee 를 5로 추정하자. subtract 850 so that there is 1150 gas left. 
+    2. sender 가 최소한 2000 * 0.001 = 2 ether 를 가지고 있는지 확인한다. 
+    만약 그렇다면, sender 의 account 에서 2 ether 를 뺀다. 
+    3. gas 를 2000 로 설정한다 ; 거래는 170 바이트이고 byte-fee 를 5로 추정하자. 
+    subtract 850 so that there is 1150 gas left. 
     4. 10 ether 를 추가로 sender 의 계정에서 뺀다. 그리고 contract 의 계정에 추가한다. 
-    5. code 를 실행한다. 이 경우에는 간단하다 : index 2 에 있는 컨트랙트의 storage 가 사용되어있는지 확인하고, 만약 안되었다면(notice that it is not), 그런 후에 index 2 의 storage 에 CHARLIE 라는 값을 넣는다. 이것이 187 gas 가 든다고 하자, 남아있는 gas 값은 1150-187 = 963 이다. 
-    6. 963 * 0.001 = 0.963 만큼의 ether 를 sender 의 계정에 다시 넣는다 , 그리고 결과 state 를 반출한다. 
+    5. code 를 실행한다. 이 경우에는 간단하다 : index 2 에 있는 컨트랙트의 storage 가 
+    사용되어있는지 확인하고, 만약 안되었다면(notice that it is not), 
+    그런 후에 index 2 의 storage 에 CHARLIE 라는 값을 넣는다. 
+    이것이 187 gas 가 든다고 하자, 남아있는 gas 값은 1150-187 = 963 이다. 
+    6. 963 * 0.001 = 0.963 만큼의 ether 를 sender 의 계정에 다시 넣는다 , 
+    그리고 결과 state 를 반출한다. 
 
-if there was no contract at the receiving end of the transaction, then the total transaction fee would simply be equal to the provided GASPRICE multiplied by the length of the transaction in bytes, and the data sent alongside the transaction would be irrelevant. 추가로, note that contract-initiated messages can assign a gas limit to the computation that they spawn, and if the sub-computation runs out of gas it gets reverted only to the point of the message call.(?) 그러므로 거래처럼, 계약은 strict 제한을(by setting strict limits on the sub-computational that they spwan(?)) 설정함으로써 그들의 제한된 computational 리소스를 지킬수 있다.
+if there was no contract at the receiving end of the transaction, 
+then the total transaction fee would simply be equal to the provided 
+GASPRICE multiplied by the length of the transaction in bytes, 
+and the data sent alongside the transaction would be irrelevant. 
+추가로, note that contract-initiated messages can assign 
+a gas limit to the computation that they spawn, 
+and if the sub-computation runs out of gas it gets reverted only to 
+the point of the message call.(?) 
+그러므로 거래처럼, 계약은 strict 제한을(by setting strict limits on the sub-computational 
+that they spwan(?)) 설정함으로써 그들의 제한된 computational 리소스를 지킬수 있다.
 
 ==== Page 17 
 
@@ -257,38 +373,86 @@ if there was no contract at the receiving end of the transaction, then the total
 * Memory , 무한히 늘어날 수 있는 byte array 
 * The contract's long term storage , computation이 끝나면 모두 reset 되는 key 와 store 값이 모두 32 바이트인 key/store store , storage 는 오랜 기간동안 지속된다. (?)
 
-코드는 또한 value , sender 그리고 block header data 같은 incoming message 의 데이터에도 접근할 수 있고 코드는 또한 output 으로 byte array 의 데이터를 return 하였다. (?)
+코드는 또한 value , sender 그리고 block header data 같은 
+incoming message 의 데이터에도 접근할 수 있고 코드는 또한 output 으로 byte array 의 데이터를 
+return 하였다. (?)
 
-EVM 코드의 전형적인 실행 모델은 엄청나게 간단하다. EVM 이 돌아갈 때, 이의 전체 computational state 는 tuple 로 정의될 수 있다. (block_state, transaction, message, code, memory, stack, pc, gas) 여기서 block_state 는 global state 로 모든 계정과 balance 그리고 storage 를 포함한다. 매번 실행할 때, current instruction 은 pc 번째 코드를 가져옴으로써 발견되고 각 instruction 은 tuple 에 어떠한 영향을 끼치는가에 대한 그만의 정의가 있습니다. 예를 들어, ADD 2개의 item 을 stack 에서 pop 하고 그들의 합을 push 한다, 그 후 gas 를 1 줄이고 pc 를 1 늘린다 그리고 SSTORE 은 스택의 맨 위에 있는 2개의 item을 push 하고 2번째 아이템을 번째 아이템으로 확인된 index 의 contract 의 storage 에 넣는다 , as well as reducing gas by up to 200 and incrementing pc by 1.(?) just-in-time compilation 을 통해서 Ethereum 을 최적화하는 방법은 여러가지가 있지만, 이더리움의 기본 구현은 몇백줄의 코드 내에서 끝낼 수 있다. 
+EVM 코드의 전형적인 실행 모델은 엄청나게 간단하다. 
+EVM 이 돌아갈 때, 이의 전체 computational state 는 tuple 로 정의될 수 있다. 
+(block_state, transaction, message, code, memory, stack, pc, gas) 
+여기서 block_state 는 global state 로 모든 계정과 balance 그리고 storage 를 포함한다. 
+매번 실행할 때, current instruction 은 pc 번째 코드를 가져옴으로써 발견되고 각 instruction 은 
+tuple 에 어떠한 영향을 끼치는가에 대한 그만의 정의가 있습니다. 
+예를 들어, ADD 2개의 item 을 stack 에서 pop 하고 그들의 합을 push 한다, 
+그 후 gas 를 1 줄이고 pc 를 1 늘린다 그리고 SSTORE 은 스택의 맨 위에 있는 2개의 item을 
+push 하고 2번째 아이템을 번째 아이템으로 확인된 index 의 contract 의 storage 에 넣는다 , 
+as well as reducing gas by up to 200 and incrementing pc by 1.(?) 
+just-in-time compilation 을 통해서 Ethereum 을 최적화하는 방법은 여러가지가 있지만, 
+이더리움의 기본 구현은 몇백줄의 코드 내에서 끝낼 수 있다. 
 
 
 ==== Page 18
 
 img 
 
-이더리움 블록체인은 많은 부분에서 비트코인 블록체인과 비슷하다 , 비록 몇가지 다른 점이 있기는 하지만. 블록체인 아키텍쳐 부분에서 이더리움과 비트코인의 가장 큰 다른점은 비트코인과는 다르게 이더리움은 거래 리스트와 가장 최근 state를 모두 가지고 있다.(?) 그 외에도 다른 2개의 값(블록 넘버와 난이도)을 블록에 저장하고 있다. 이더리움에서 블록 검증 과정은 다음과 같다 : 
+이더리움 블록체인은 많은 부분에서 비트코인 블록체인과 비슷하다 , 
+비록 몇가지 다른 점이 있기는 하지만. 블록체인 아키텍쳐 부분에서 이더리움과 비트코인의 가장 큰 다른점은 
+비트코인과는 다르게 이더리움은 거래 리스트와 가장 최근 state를 모두 가지고 있다.(?) 
+그 외에도 다른 2개의 값(블록 넘버와 난이도)을 블록에 저장하고 있다. 
+이더리움에서 블록 검증 과정은 다음과 같다 : 
 
     1. 참조한 이전 블록이 존재하고 유효한지 확인한다. 
     2. 블록의 timestamp 가 참조한 이전 블록의 것보다 큰지 그리고 15분 이내의 차이가 있는지 확인하라. (?)
-    3. 블록 넘버, 난이도 , 트랜잭션 루트 , 엉클 루트 그리고 가스 리밋 (various low - level Ethereum - specific concepts) 가 유효한지 검사하라. 
+    3. 블록 넘버, 난이도 , 트랜잭션 루트 , 엉클 루트 
+    그리고 가스 리밋 (various low - level Ethereum - specific concepts) 가 유효한지 검사하라. 
     4. 블록의 POW가 유효한지 확인하라. 
     5. S[0]가 이전 블록의 STATE_ROOT가 되게 하자. 
-    6. TX가 블록의 거래 리스트가 되게 하고 n 거래들과 함께.(?) For all in in 0...n-1, setS[i+1] = APPLY(S[i],TX[i]). 만약 어느 어플리케이션이라도 error 를 내면, 또는 만약 블록에서의 전체 가스 소비량이 GASLIMIT 을 초과하는 지점까지 가면 error 를 낸다. (?)
+    6. TX가 블록의 거래 리스트가 되게 하고 n 거래들과 함께.(?) 
+    For all in in 0...n-1, setS[i+1] = APPLY(S[i],TX[i]). 
+    만약 어느 어플리케이션이라도 error 를 내면, 
+    또는 만약 블록에서의 전체 가스 소비량이 GASLIMIT 을 초과하는 지점까지 가면 error 를 낸다. (?)
     7. S_FINAL 을 S[n] 으로 하자, 블록 reward 를 miner 에게 지급한다. 
     8. S_FINAL 이 STATE_ROOT 와 같은지 확인하라. 만약 같으면 블록이 유효하다 ; 안미녀 유효하지 않다. 
 
 
 ==== Page 19
 
-이 접근법이 처음 봤을 때는 비효율적으로 보일수도 있을 것이다, 왜냐하면 각 블록의 전체의 state 를 저장할 필요가 있기 때문이다, 그러나 현실에서는 그 효율성이 비트코인의 효율성과 비교된다. 그 이유는 state 는 tree structure 에 저장되어 있고 매 블록마다 트리의 작은 부분들만 변경되어야 하기 때문이다. 그러므로, 두 인접한 블록은 대부분의 트리가 동일해야 하고, 그러므로 데이터는 한번 저장되어야 하고 2개의 pointer 를 사용해서 참조한다. (referenced twice using pointers(?)) (ie. hashes of subtrees). "Patricia tree"라고 불리우는 특별한 종류의 트리가 이를 실행하는데 쓰이고, including  a modification to the Merkle tree concept that allows for nodes to be inserted and deleted , and not just changed , efficiently. (?) 추가로, state information 전체가 last block의 일부이기에, 전체 블록체인 역사를 저장할 필요가 없다 - 비트코인에 적용될 수 있는 이 전략은 5-20x의 공간을 절약할 수 있게 계산될 수 있다. (?)
+이 접근법이 처음 봤을 때는 비효율적으로 보일수도 있을 것이다, 
+왜냐하면 각 블록의 전체의 state 를 저장할 필요가 있기 때문이다, 
+그러나 현실에서는 그 효율성이 비트코인의 효율성과 비교된다. 
+그 이유는 state 는 tree structure 에 저장되어 있고 매 블록마다 트리의 작은 부분들만 변경되어야 하기 때문이다. 
+그러므로, 두 인접한 블록은 대부분의 트리가 동일해야 하고, 그러므로 데이터는 한번 저장되어야 하고 
+2개의 pointer 를 사용해서 참조한다. 
+(referenced twice using pointers(?)) (ie. hashes of subtrees). 
+"Patricia tree"라고 불리우는 특별한 종류의 트리가 이를 실행하는데 쓰이고, 
+including  a modification to the Merkle tree concept that allows for nodes 
+to be inserted and deleted , and not just changed , efficiently. (?) 
+추가로, state information 전체가 last block의 일부이기에, 
+전체 블록체인 역사를 저장할 필요가 없다 - 
+비트코인에 적용될 수 있는 이 전략은 5-20x의 공간을 절약할 수 있게 계산될 수 있다. (?)
 
 ===== Applications
 
-보통, 이더리움에는 3가지 종류의 application이 있다. 첫번째는 사용자가 그들의 돈을 사용하여 계약을 관리하고 체결하는 보다 강력한 방법들을 유저에게 제공하는 금융 관련 어플리케이션이다. 이는 하위 통화(sub-currencies?), 금융 파생 상품,헤지 계약 , 저축 지갑 , 유언장 그리고 궁극적으로 심지어 몇몇의 full-scale 고용 계약도 포함한다. 두번째는 돈이 포함되어 있지만 비-금융(non-monetary)부분이 포함되어있는 준-금융(semi-financial) 어플리케이션이다. ; 예시로는 self-enforcing bounties for solutions to computational problems.(?) 마지막으로 전혀 금융적이지 않은 online voting 과 탈중앙화된 거버넌스이다.
+보통, 이더리움에는 3가지 종류의 application이 있다. 
+첫번째는 사용자가 그들의 돈을 사용하여 계약을 관리하고 체결하는 보다 강력한 방법들을 
+유저에게 제공하는 금융 관련 어플리케이션이다. 
+이는 하위 통화(sub-currencies?), 금융 파생 상품,헤지 계약 , 저축 지갑 , 유언장 
+그리고 궁극적으로 심지어 몇몇의 full-scale 고용 계약도 포함한다. 
+두번째는 돈이 포함되어 있지만 비-금융(non-monetary)부분이 포함되어있는 준-금융(semi-financial) 
+어플리케이션이다. ; 예시로는 self-enforcing bounties for solutions to computational problems.(?) 
+마지막으로 전혀 금융적이지 않은 online voting 과 탈중앙화된 거버넌스이다.
 
 ===== Token Systems 
 
-On-blockchain 토큰 시스템은 sub-currencies (USD 나 금) 부터 회사 주식까지, 개별 토큰 같은 스마트 자산, 안전한 unforgeable coupons(?), 그리고 conventional value 와 전혀 관련이 없고 인센티브 제공으로 사용되는 토큰 시스템까지 다양한 어플리케이션을 가지고 있다 .(?) 토큰 시스템은 이더리움에 적용하기 놀라울 정도로 쉽다. 중요한 점은 통화 또는 하나의 토큰 시스템은 근본적으로 하나의 작업을 수행하는 데이터베이스라는 것이다 : A 에게 X 만큼 빼고 X만큼을 B에게 주는 것 , (1) 거래 전에 A 는 최소한 X 만큼을 가지고 있어야 하고 (2) A가 거래를 승인한다는 조건이 성립되어야 한다. 토큰 시스템을 구현하는데 필요한 모든 것들은 이 논리를 계약으로 구현하는 것이다.(?) 
+On-blockchain 토큰 시스템은 sub-currencies (USD 나 금) 부터 
+회사 주식까지, 개별 토큰 같은 스마트 자산, 안전한 unforgeable coupons(?), 
+그리고 conventional value 와 전혀 관련이 없고 인센티브 제공으로 사용되는 토큰 시스템까지 
+다양한 어플리케이션을 가지고 있다 .(?) 토큰 시스템은 이더리움에 적용하기 놀라울 정도로 쉽다. 
+중요한 점은 통화 또는 하나의 토큰 시스템은 근본적으로 하나의 작업을 수행하는 데이터베이스라는 것이다 : 
+A 에게 X 만큼 빼고 X만큼을 B에게 주는 것 , 
+(1) 거래 전에 A 는 최소한 X 만큼을 가지고 있어야 하고 
+(2) A가 거래를 승인한다는 조건이 성립되어야 한다. 
+토큰 시스템을 구현하는데 필요한 모든 것들은 이 논리를 계약으로 구현하는 것이다.(?) 
 
 ==== Page 20
 
@@ -300,10 +464,70 @@ On-blockchain 토큰 시스템은 sub-currencies (USD 나 금) 부터 회사 주
 
 ==== Page 22
 
+===== identity and reputation systems 
+
+모든 대안 화폐의 시초인 (the earliest alternative of all) , 네임코인은
+이름 등록 시스템을 제공하기 위해서 비트코인과 유사한 블록체인을 도입했다. 사용자들은 이름을 
+다른 데이터와 함께 퍼블릭 데이터베이스에 등록할 수 있다. 가장 유명한 사용된 사례(?) "bitcoin.org"
+와 같은 도메인 이름을 IP 주소에 매핑하는 DNS 시스템이다. (Namecoin 같은 경우에는 "bitcoin.bit")
+다른 사례로는 이메일 인증이나 다른 advanced 평판 시스템이 있다.(?) 아래에 이더리움에서의 
+네임코인 같은 이름 등록 시스템에 대한 기본적인 컨트랙트 코드가 있다. 
+
+예를 들어, 컨트랙트의 코드가 다음과 같다라고 가정해보자 : 
+
+    if !contract.storage[tx.data[0]]:
+        contract.storage[tx.data[0]]=tx.data[1]
+
+컨트랙트는 매우 간단하다 ; 이는 추가만 되고 수정과 제거가 안되는 이더리움 네트워크 안에 있는 
+데이터베이스이다. 누구나 특정 값과 함께 이름을 등록할 수 있고, 그 등록값은 영원히 남는다. 
+A more sophisticated name registration contract will also have a 
+"function clause" allowing other contracts to query it, 
+as well as a mechanism for the "owner" (ie. the first registerer) 
+of a name to change the data or transfer ownership. 
+One can even add reputation and web-of-trust functionality on top.
+
+===== 탈중앙화된 파일 저장소 (Decentralized File Storage)
+
+지난 몇년 동안, 몇개의 유명한 온라인 파일 저장소 스타트업들이 생겨났다. 가장 유명한 것은 Dropbox로
+그들의 하드 드라이브의 백업 할 수 있게 하고 매달 사용료를 내면서 이를 사용할 수 있게 한다. 
+그러나, 파일 스토리지 시장이 상대적으로 비효율적일 때도 있다; a cursory look at various 
+existing solutions shows that, particularly at the "uncanny valley" 
+20-200 GB level at which neither free quotas nor enterprise-level 
+discounts kick in, monthly prices for mainstream file storage costs 
+are such that you are paying for more than the cost of the entire hard drive 
+in a single month. Ethereum contracts can allow for the development 
+of a decentralized file storage ecosystem, where individual users can earn 
+small quantities of money by renting out their own hard drives and 
+unused space can be used to further drive down the costs of file storage.
+
+The key underpinning piece of such a device would be what we have termed 
+the "decentralized Dropbox contract". This contract works as follows. 
+First, one splits the desired data up into blocks, 
+encrypting each block for privacy, and builds a Merkle tree out of it. 
+One then makes a contract with the rule that, every N blocks, 
+the contract would pick a random index in the Merkle tree 
+(using the previous block hash, accessible from contract code, 
+as a source of randomness), and give X ether to the first entity 
+to supply a transaction with a
 
 
 ==== Page 23
 
+simplified payment verification-like proof of ownership of the block at that particular index in the tree. 유저가 그들의 파일을 다시 다운로드하고 싶으면, they can use a micropayment channel protocol (eg. pay 1 szabo per 32 kilobytes) to recover the file; the most fee-efficient approach is for the payer not to publish the transaction until the end, instead replacing the transaction with a slightly more lucrative one with the same nonce after every 32 kilobytes.
+
+An important feature of the protocol is that, although it may seem like one is trusting many random nodes not to decide to forget the file, one can reduce that risk down to near-zero by splitting the file into many pieces via secret sharing, and watching the contracts to see each piece is still in some node's possession. If a contract is still paying out money, that provides a cryptographic proof that someone out there is still storing the file.
+
+===== DAO , Decentralized Autonomous Organization
+
+The general concept of a "decentralized organization" is that of a virtual entity that has a certain set of members or shareholders which, perhaps with a 67% majority, have the right to spend the entity's funds and modify its code. The members would collectively decide on how the organization should allocate its funds. Methods for allocating a DAO's funds could range from bounties, salaries to even more exotic mechanisms such as an internal currency to reward work. This essentially replicates the legal trappings of a traditional company or nonprofit but using only cryptographic blockchain technology for enforcement. So far much of the talk around DAOs has been around the "capitalist" model of a "decentralized autonomous corporation" (DAC) with dividend-receiving shareholders and tradable shares; an alternative, perhaps described as a "decentralized autonomous community", would have all members have an equal share in the decision making and require 67% of existing members to agree to add or remove a member. The requirement that one person can only have one membership would then need to be enforced collectively by the group.
+
+A general outline for how to code a DO is as follows. The simplest design is simply a piece of self-modifying code that changes if two thirds of members agree on a change. Although code is theoretically immutable, one can easily get around this and have de-facto mutability by having chunks of the code in separate contracts, and having the address of which contracts to call stored in the modifiable storage. In a simple implementation of such a DAO contract, there would be three transaction types, distinguished by the data provided in the transaction:
+
+*  pass:[<code> 0,i,K,V </code>] to register a proposal with index i to change the address at storage index K to value V
+* pass:[<code> 0,i </code>] to register a vote in favor of proposal i
+* pass:[<code> 2,i </code>] to finalize proposal i if enough votes have been made
+
+The contract would then have clauses for each of these. It would maintain a record of all open storage changes, along with a list of who voted for them. It would also have a list of all members. When any storage
 
 
 ==== Page 24
@@ -313,6 +537,43 @@ On-blockchain 토큰 시스템은 sub-currencies (USD 나 금) 부터 회사 주
 ==== Page 25
 
 
+2.작물 보험
+
+시세가 아닌 날씨 데이터 피드를 사용해서 금융 파생상품을 쉽게 만들 수 있다. 
+아이오와주에 있는 한 농부가 아이오와주의 강수량을 기준으로 역비레하게 지불금이 
+산출되는 파생상품을 구입했다고 하자. 가뭄이 오면 농부는 자동으로 돈을 받고, 
+비가 충분히 오면 농작물이 잘 자랄 것이기 때문에 기뻐할 것이다. 
+
+3.탈중앙화된 데이터피드
+
+"셸링 코인"이라는 프로토콜을 이용하면 변량(difference) 을 
+다루는 금융계약에 관련된 데이터 피드를 탈중앙화 방식으로 운용할 수 있을 것이다. 
+셸링 코인은 다음과 같은 방식으로 작동한다 :
+
+N 명의 참가자들 모두가 주어진 항목 (given datum?)에 대한 값을 시스템에 제출한다. 
+
+그 값은 정렬이 되고 25에서 75 퍼센트 사이에 있는 값을 낸 참가장 한명이 1개 토큰을 보상으로 받는다. 
+
+Everyone has the incentive to provide the answer that everyone else will provide, 
+and the only value that a large number of players can realistically agree on 
+is the obvious default: the truth. 
+
+이는 ETH/USD 가격 , 베를린의 온도 심지어 계산하기 어려운 특정값의 결과
+(result of a particular hard computation) 등을 포함한 어떤 값들도 이론적으로 제공할 수 있는 
+탈중앙화된 프로토콜을 만들 수 있게 해준다.
+
+4.스마트 다중서명 공탁계좌 (multi-signature escorw)
+
+비트코인은 5개중 3개의 키를 가지고 있으면 자금을 쓸 수 있는 방식으로 다중서명(multisignature) 거래를 제공한다. 
+이더리움은 조금 더 세부적인 기능들을 제공한다 ; 예를 들면, 5개 중 4개의 키를 가지고 있으면, 
+전체를 사용할 수 있고, 5개중 3개를 가지고 있으면 매일 10% 만큼을 사용할 수 있고, 5개 중 2개를 가지고 있으면 
+0.5%를 사용할 수 있다.
+추가로, 이더리움 멀티시그는 비동기적이다 - 
+2개의 주체가 그들의 서명을 각기 다른 시간에 블록체인에 등록할 수 있고 마지막 서명은 자동으로 거래를 전송한다.
+
+5.클라우드 컴퓨팅
+
+EVM 기술은 검증된 컴퓨팅 환경을 생성하는데에도 쓰일 수 있다. 
 
 ==== Page 26
 
@@ -366,13 +627,27 @@ On-blockchain 토큰 시스템은 sub-currencies (USD 나 금) 부터 회사 주
 
 2. 기술적으로, 11 이전 블록의 median 이다. 
 
-3. 이더리움 프로토콜은 가능한 간단해야한다, 그러나 높은 수준의 복잡도를 가지는 것은 필수이다, for instance to scale, to internalize costs of storage , bandwidth and I/O for sercurity , privacy , transparency, etc.(?) Where complexity is necessary, documentation should be clear, concise and up-to-date as possible, 이더리움에 대해서 전혀 모르는 사람도 전문가가 될 수 있게 
+3. 이더리움 프로토콜은 가능한 간단해야한다, 그러나 높은 수준의 복잡도를 가지는 것은 필수이다, 
+for instance to scale, to internalize costs of storage , 
+bandwidth and I/O for sercurity , privacy , transparency, etc.(?) 
+Where complexity is necessary, documentation should be clear, 
+concise and up-to-date as possible, 이더리움에 대해서 전혀 모르는 사람도 전문가가 될 수 있게 
 
-4. Ethereum Virtual Machine에 대한 것은 황서에 나와있다. (스펙확인과 이더리움 클라이언트를 초기부터 개발하는데 있어서 참고자료로 유용하다.), 또한 이더리움 위키에도 샤딩 개발, 코어 개발, dapp 개발, 리서치 Casper R&D 그리고 네트워킹 프로토콜 등 다양한 주제에 대한 자료들이 있다. 추가 연구와 구현은 ethresear.ch 을 참조하라.
+4. Ethereum Virtual Machine에 대한 것은 황서에 나와있다. 
+(스펙확인과 이더리움 클라이언트를 초기부터 개발하는데 있어서 참고자료로 유용하다.), 
+또한 이더리움 위키에도 샤딩 개발, 코어 개발, dapp 개발, 리서치 Casper R&D 그리고 
+네트워킹 프로토콜 등 다양한 주제에 대한 자료들이 있다. 추가 연구와 구현은 ethresear.ch 을 참조하라.
 
-5. 이를 표현하는 또다른 방법은 abstraction 이다. The latest roadmap is planning to abstract execution, allowing execution engines to not necessarily have to follow one canonical specification, but for instance it could be tailored for a specific application, as well as a shard. (이 실행 엔진의 이질성은  로드맵에 명시적으로 언급되어있지 않다. 블라드 잠피(Vlad Zamfir)가 개념화한 heterogeneous sharding 도 있다.)
+5. 이를 표현하는 또다른 방법은 abstraction 이다. 
+The latest roadmap is planning to abstract execution, 
+allowing execution engines to not necessarily have to follow one canonical specification, 
+but for instance it could be tailored for a specific application, 
+as well as a shard. 
+(이 실행 엔진의 이질성은  로드맵에 명시적으로 언급되어있지 않다. 블라드 잠피(Vlad Zamfir)가 
+개념화한 heterogeneous sharding 도 있다.)
 
-6. Internally, 2 and "CHARLIE" are both numbers, with the latter being in big-endian base 256 representation. 숫자는 0부터 2^256-1 사이이다.
+6. Internally, 2 and "CHARLIE" are both numbers, 
+with the latter being in big-endian base 256 representation. 숫자는 0부터 2^256-1 사이이다.
 
 ===== Further Reading 
 
