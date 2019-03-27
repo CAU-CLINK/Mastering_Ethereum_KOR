@@ -3,7 +3,7 @@
 === A NEXT GENERATION SMART CONTRACT & DECENTRALIZED APPLICATION PLATFORM
 ==== By Vitalik Buterin
 ==== Translated by C-Link (Chung-ang Univeristy Blockchain Research Group) 
-===== 최혜정(Hye-Jung, Choi), 신준오(Jun-Oh, Shin), 박민서 (Min-seo, Park)
+===== 최혜정(Hye-Jung, Choi), 신준오(Jun-Oh, Shin), 박민서 (Min-seo, Park) 번역
 
 
 사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때(set into motion), 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 지금까지 통화 단위로서의 "비트코인"은 중앙 은행이 없는 화폐라는 정치적 측면과 높은 가격 변동성으로 대중의 관심을 많이 이끌었다. 
