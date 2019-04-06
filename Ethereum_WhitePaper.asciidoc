@@ -6,7 +6,7 @@
 ===== 최혜정(Hye-Jung, Choi), 신준오(Jun-Oh, Shin), 박민서 (Min-seo, Park) 번역
 
 
-사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때(set into motion), 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 지금까지 통화 단위로서의 "비트코인"은 중앙 은행이 없는 화폐라는 정치적 측면과 높은 가격 변동성으로 대중의 관심을 많이 이끌었다. 
+사토시 나카모토가 비트코인 블록체인 프로젝트를 2009년 1월에 처음 시작했을 때, 그는 동시에 2가지 급진적이고 검증되지 않은 개념을 소개했다. 첫 번째는 지원(backing), 내재 가치(intrinsic value), 중앙 발행자(central issuer)없는 탈중앙화된 p2p 온라인 통화 '비트코인'이다. 지금까지 통화 단위로서의 "비트코인"은 중앙 은행이 없는 화폐라는 정치적 측면과 높은 가격 변동성으로 대중의 관심을 많이 이끌었다. 
 
 그리고 사토시의 웅대한 실험(grand experiment)에서 이만큼 중요한 다른 부분이 있다. : 거래의 순서에 대한 공공의 동의(public agreement)를 허용하는(allow) POW 기반 블록체인의 concept이다. 
 
@@ -83,7 +83,7 @@ APPLY({APPLY: $50, Bob: $50}, "send $20 from Alice to Bob") = { Alice: $30, Bob:
 APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
 ----
 
-비트코인에서 "상태" 는 채굴이 되었으나 아직 사용되지 않은 코인들의 모음 (정확히 하자면 unspent transacrtion outputs 혹은 UTXO) 이고 각 UTXO 는 금액과 소유주(암호화된 20바이트의 Pulblic key) 정보가 있다. 거래는 1개 혹은 그 이상의 input과 1개 혹은 이상의 output을 가지고 있다. 각 input 은 실존하는 UTXO 와 주소의 소유자와 관련된 private key로부터 생성된 서명(cryptographic signature)을 포함하고 있고 각 output 은 상태에 추가될 새로운 UTXO 를 가지고 있다. 
+비트코인에서 "상태" 는 채굴이 되었으나 아직 사용되지 않은 코인들의 모음 (주로 unspent transacrtion outputs 혹은 UTXO) 이고 각 UTXO 는 금액과 소유주(암호화된 20바이트의 Pulblic key) 정보가 있다. 거래는 1개 혹은 그 이상의 input과 1개 혹은 이상의 output을 가지고 있다. 각 input 은 실존하는 UTXO 와 주소의 소유자와 관련된 private key로부터 생성된 서명(cryptographic signature)을 포함하고 있고 각 output 은 상태에 추가될 새로운 UTXO 를 가지고 있다. 
 
 ===== Page 6
 
@@ -104,7 +104,7 @@ APPLY({ Alice: $50, Bob: $50 }, "send $70 from Alice to Bob") = ERROR
 
 그림 
 
-만약 우리가 trustworthy 한 중앙화된 service 에 access 했다면, 이 시스템은 적용하기에 trivial 할 것이다 ; 이는 묘사된대로 정확하게 코딩될 것이다. (?) 그러나, 우리는 비트코인과 같이 탈중앙화된 통화 시스템을 만드려고 하는 것이고, 그래서 우리는 합의 알고리즘에 상태 변환 함수를 더하려고 한다. 그래야 모든이가 거래의 order 에 동의할 수 있기 때문이다. 비트코인의 탈중앙화된 합의 과정은 네트워크에 참가하는 노드가 지속적으로 "블록"이라고 불리우는 거래 모음을 만들어 내야한다. 이 네트워크는 약 10분마다 1개의 블록이 만들어지게 의도되었고, 각 블록은 timestamp , nonce , 이전 블록으로의 참조 그리고 저번 블록 이후에 발생한 모든 거래의 목록을 포함하고 있다.
+만약 우리가 믿을 만한 중앙화된 service 에 access 했다면, 이 시스템은 적용하기에 trivial 할 것이다 ; 이는 묘사된대로 정확하게 코딩될 것이다. (?) 그러나, 우리는 비트코인과 같이 탈중앙화된 통화 시스템을 만드려고 하는 것이고, 그래서 우리는 합의 알고리즘에 상태 변환 함수를 더하려고 한다. 그래야 모든이가 거래의 order 에 동의할 수 있기 때문이다. 비트코인의 탈중앙화된 합의 과정은 네트워크에 참가하는 노드가 지속적으로 "블록"이라고 불리우는 거래 모음을 만들어 내야한다. 이 네트워크는 약 10분마다 1개의 블록이 만들어지게 의도되었고, 각 블록은 timestamp , nonce , 이전 블록으로의 참조 그리고 저번 블록 이후에 발생한 모든 거래의 목록을 포함하고 있다.
 
 ===== Page 7
 
@@ -192,7 +192,7 @@ metacoin 의 아이디어 배경에는 비트코인 상에서 움직이지만 AP
 그래서, 보통, 컨센서스 프로토콜을 만드는데에는 2가지 접근 방식이 있다 : 
 독립적인 네트워크를 만드는 것 그리고 비트코인 상에 프로토콜을 만드는 것이다. 전자의 방법은 실행하기가 어렵다 , name coin 같은 경우에는 꽤나 성공한 케이스이다. 각각 개별적으로 구현을 할 때, 독립적인 블록체인을 bootstrap 해야하고, 모든 필수적인 상태변환과 네트워킹 관련 코드도 시험해봐야 한다. 
 
-Additionally, we predict that the set of applications for decentralized consensus technology will follow a power law distribution where the vast majority of applications would be too small to warrant their own blockchain, and we note that there exist large classes of decentralized applications, particularly decentralized autonomous organizations, that need to interact with each other. The Bitcoin-based approach, on the other hand, has the flaw that it does not inherit the simplified payment verification features of Bitcoin. SPV works for Bitcoin because it can use blockchain depth as a proxy for validity; at some point, once the ancestors of a transaction go far enough back, it is safe to say that they were legitimately part of the state. 반면, 블록체인 기반의 메타 프로토콜에서는 유효하지 않은 거래를 그들의 문맥에서는 함부로 포함하지 않게 할 수는 없다. Hence, a fully secure SPV meta-protocol implementation would need to backward scan all the way to the beginning of the Bitcoin blockchain to determine whether or not certain transactions are valid. Currently, all "light" implementations of Bitcoin-based meta-protocols rely on a trusted server to provide the data, arguably a highly suboptimal result especially when one of the primary purposes of a cryptocurrency is to eliminate the need for trust.
+Additionally, we predict that the set of applications for decentralized consensus technology will follow a power law distribution where the vast majority of applications would be too small to warrant their own blockchain, and we note that there exist large classes of decentralized applications, particularly decentralized autonomous organizations, that need to interact with each other. 반면에, 비트코인 기반의 관점으로 봤을 때는,  The Bitcoin-based approach, on the other hand, has the flaw that it does not inherit the simplified payment verification features of Bitcoin. SPV works for Bitcoin because it can use blockchain depth as a proxy for validity; at some point, once the ancestors of a transaction go far enough back, it is safe to say that they were legitimately part of the state. 반면, 블록체인 기반의 메타 프로토콜에서는 유효하지 않은 거래를 그들의 문맥에서는 함부로 포함하지 않게 할 수는 없다. Hence, a fully secure SPV meta-protocol implementation would need to backward scan all the way to the beginning of the Bitcoin blockchain to determine whether or not certain transactions are valid. Currently, all "light" implementations of Bitcoin-based meta-protocols rely on a trusted server to provide the data, arguably a highly suboptimal result especially when one of the primary purposes of a cryptocurrency is to eliminate the need for trust.
 
 ====== Scripting
 
@@ -201,7 +201,7 @@ in a simple stack-based programming language. 이 패러다임에서는, UTXO �
 
 ===== Page 12
 
-Indeed, even the basic public key ownership mechanism isimplemented via a script: the script takes an elliptic curve signature as input, verifies it against the transaction and the address that owns the UTXO, and returns 1 if the verification is successful and 0 otherwise. Other, more complicated, scripts exist for various additional use cases. For example, one can construct a script that requires signatures from two out of a given three private keys to validate ("multisig"), a setup useful for corporate accounts, secure savings accounts and some merchant escrow situations. Scripts can also be used to pay bounties for solutions to computational problems, and one can even construct a script that says something like "this Bitcoin UTXO is yours if you can provide an SPV proof that you sent a Dogecoin transaction of this denomination to me", essentially allowing decentralized cross-cryptocurrency exchange.
+실제로, 기본적인 공개키 소유 메커니즘조차도 스크립트를 통해서 구현됩니다 : 스크립트는 타원곡선 서명을 input 값으로 넣고, verifies it against the transaction and the address that owns the UTXO, and returns 1 if the verification is successful and 0 otherwise. Other, more complicated, scripts exist for various additional use cases. For example, one can construct a script that requires signatures from two out of a given three private keys to validate ("multisig"), a setup useful for corporate accounts, secure savings accounts and some merchant escrow situations. Scripts can also be used to pay bounties for solutions to computational problems, and one can even construct a script that says something like "this Bitcoin UTXO is yours if you can provide an SPV proof that you sent a Dogecoin transaction of this denomination to me", essentially allowing decentralized cross-cryptocurrency exchange.
 
 그러나, 비트코인에서 구현된 스크립팅 언어에는 몇가지 한계가 있다 : 
 
@@ -488,28 +488,9 @@ One can even add reputation and web-of-trust functionality on top.
 
 ===== 탈중앙화된 파일 저장소 (Decentralized File Storage)
 
-지난 몇년 동안, 몇개의 유명한 온라인 파일 저장소 스타트업들이 생겨났다. 가장 유명한 것은 Dropbox로
-그들의 하드 드라이브의 백업 할 수 있게 하고 매달 사용료를 내면서 이를 사용할 수 있게 한다. 
-그러나, 파일 스토리지 시장이 상대적으로 비효율적일 때도 있다; a cursory look at various 
-existing solutions shows that, particularly at the "uncanny valley" 
-20-200 GB level at which neither free quotas nor enterprise-level 
-discounts kick in, monthly prices for mainstream file storage costs 
-are such that you are paying for more than the cost of the entire hard drive 
-in a single month. Ethereum contracts can allow for the development 
-of a decentralized file storage ecosystem, where individual users can earn 
-small quantities of money by renting out their own hard drives and 
-unused space can be used to further drive down the costs of file storage.
+지난 몇년 동안, 몇개의 유명한 온라인 파일 저장소 스타트업들이 생겨났다. 가장 유명한 것은 Dropbox로 그들의 하드 드라이브의 백업 할 수 있게 하고 매달 사용료를 내면서 이를 사용할 수 있게 한다. 그러나, 파일 스토리지 시장이 상대적으로 비효율적일 때도 있다; a cursory look at various existing solutions shows that, particularly at the "uncanny valley" 20-200 GB level at which neither free quotas nor enterprise-level discounts kick in, monthly prices for mainstream file storage costs are such that you are paying for more than the cost of the entire hard drive in a single month. Ethereum contracts can allow for the development of a decentralized file storage ecosystem, where individual users can earn small quantities of money by renting out their own hard drives and unused space can be used to further drive down the costs of file storage.
 
-The key underpinning piece of such a device would be what we have termed 
-the "decentralized Dropbox contract". This contract works as follows. 
-First, one splits the desired data up into blocks, 
-encrypting each block for privacy, and builds a Merkle tree out of it. 
-One then makes a contract with the rule that, every N blocks, 
-the contract would pick a random index in the Merkle tree 
-(using the previous block hash, accessible from contract code, 
-as a source of randomness), and give X ether to the first entity 
-to supply a transaction with a
-
+The key underpinning piece of such a device would be what we have termed the "decentralized Dropbox contract". This contract works as follows. First, one splits the desired data up into blocks, encrypting each block for privacy, and builds a Merkle tree out of it. One then makes a contract with the rule that, every N blocks, the contract would pick a random index in the Merkle tree (using the previous block hash, accessible from contract code, as a source of randomness), and give X ether to the first entity to supply a transaction with a
 
 ==== Page 23
 
@@ -539,37 +520,23 @@ The contract would then have clauses for each of these. It would maintain a reco
 
 2.작물 보험
 
-시세가 아닌 날씨 데이터 피드를 사용해서 금융 파생상품을 쉽게 만들 수 있다. 
-아이오와주에 있는 한 농부가 아이오와주의 강수량을 기준으로 역비레하게 지불금이 
-산출되는 파생상품을 구입했다고 하자. 가뭄이 오면 농부는 자동으로 돈을 받고, 
-비가 충분히 오면 농작물이 잘 자랄 것이기 때문에 기뻐할 것이다. 
+시세가 아닌 날씨 데이터 피드를 사용해서 금융 파생상품을 쉽게 만들 수 있다. 아이오와주에 있는 한 농부가 아이오와주의 강수량을 기준으로 역비레하게 지불금이 산출되는 파생상품을 구입했다고 하자. 가뭄이 오면 농부는 자동으로 돈을 받고, 비가 충분히 오면 농작물이 잘 자랄 것이기 때문에 기뻐할 것이다. 
 
 3.탈중앙화된 데이터피드
 
-"셸링 코인"이라는 프로토콜을 이용하면 변량(difference) 을 
-다루는 금융계약에 관련된 데이터 피드를 탈중앙화 방식으로 운용할 수 있을 것이다. 
-셸링 코인은 다음과 같은 방식으로 작동한다 :
+"셸링 코인"이라는 프로토콜을 이용하면 변량(difference) 을 다루는 금융계약에 관련된 데이터 피드를 탈중앙화 방식으로 운용할 수 있을 것이다. 셸링 코인은 다음과 같은 방식으로 작동한다 :
 
 N 명의 참가자들 모두가 주어진 항목 (given datum?)에 대한 값을 시스템에 제출한다. 
 
 그 값은 정렬이 되고 25에서 75 퍼센트 사이에 있는 값을 낸 참가장 한명이 1개 토큰을 보상으로 받는다. 
 
-Everyone has the incentive to provide the answer that everyone else will provide, 
-and the only value that a large number of players can realistically agree on 
-is the obvious default: the truth. 
+Everyone has the incentive to provide the answer that everyone else will provide, and the only value that a large number of players can realistically agree on is the obvious default: the truth. 
 
-이는 ETH/USD 가격 , 베를린의 온도 심지어 계산하기 어려운 특정값의 결과
-(result of a particular hard computation) 등을 포함한 어떤 값들도 이론적으로 제공할 수 있는 
-탈중앙화된 프로토콜을 만들 수 있게 해준다.
+이는 ETH/USD 가격 , 베를린의 온도 심지어 계산하기 어려운 특정값의 결과(result of a particular hard computation) 등을 포함한 어떤 값들도 이론적으로 제공할 수 있는 탈중앙화된 프로토콜을 만들 수 있게 해준다.
 
 4.스마트 다중서명 공탁계좌 (multi-signature escorw)
 
-비트코인은 5개중 3개의 키를 가지고 있으면 자금을 쓸 수 있는 방식으로 다중서명(multisignature) 거래를 제공한다. 
-이더리움은 조금 더 세부적인 기능들을 제공한다 ; 예를 들면, 5개 중 4개의 키를 가지고 있으면, 
-전체를 사용할 수 있고, 5개중 3개를 가지고 있으면 매일 10% 만큼을 사용할 수 있고, 5개 중 2개를 가지고 있으면 
-0.5%를 사용할 수 있다.
-추가로, 이더리움 멀티시그는 비동기적이다 - 
-2개의 주체가 그들의 서명을 각기 다른 시간에 블록체인에 등록할 수 있고 마지막 서명은 자동으로 거래를 전송한다.
+비트코인은 5개중 3개의 키를 가지고 있으면 자금을 쓸 수 있는 방식으로 다중서명(multisignature) 거래를 제공한다. 이더리움은 조금 더 세부적인 기능들을 제공한다 ; 예를 들면, 5개 중 4개의 키를 가지고 있으면, 전체를 사용할 수 있고, 5개중 3개를 가지고 있으면 매일 10% 만큼을 사용할 수 있고, 5개 중 2개를 가지고 있으면 0.5%를 사용할 수 있다.추가로, 이더리움 멀티시그는 비동기적이다 - 2개의 주체가 그들의 서명을 각기 다른 시간에 블록체인에 등록할 수 있고 마지막 서명은 자동으로 거래를 전송한다.
 
 5.클라우드 컴퓨팅
 
